@@ -1,4 +1,4 @@
-# pannawat-minecraft-server
+# now-minecraft-server
 
 **iSMP-style Minecraft survival server** running Fabric 1.21.4 (26.3)  
 Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b621fcb8724cf00b0b6)
@@ -15,7 +15,6 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 | Heap | 6 GB (-Xmx6G) |
 | View Distance | 7 chunks |
 | Simulation Distance | 5 chunks |
-| Voice Chat | Simple Voice Chat (port 24454 UDP) |
 
 ---
 
@@ -34,8 +33,6 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 | Fabric Carpet | 26.3+v260915 | Server rules, `/tick`, `/player`, debug tools |
 | Servux | 26.3-0.12.2 | Server-side litematica support |
 | Syncmatica | 26.3-0.3.20 | Share/sync litematica schematics |
-| AudioPlayer | 2.5.0+26.3 | Play custom audio via disc/goat horn |
-| Simple Voice Chat | 2.6.24+26.3 | Proximity voice chat |
 | TabTPS | 1.4.2 | Show TPS/MSPT/ping in tab list |
 | Tree Vein Miner | 4.3.2 | Fell entire trees at once |
 | SkinsRestorer | 15.12.6 | Offline-mode custom skins |
@@ -106,7 +103,6 @@ simulation-distance=5
 | C2ME multi-threaded chunks | Mod |
 | Alternate Current redstone | Mod |
 | Servux + Syncmatica | Mod |
-| AudioPlayer | Mod |
 | Chunky pre-generation | Mod |
 | World-specific view distance | Partial (ServerCore) |
 | Ender Dragon drops Elytra + Head | Datapack |
@@ -123,7 +119,6 @@ simulation-distance=5
 | TPS in F3 (Alt+2) via TabTPS | Mod |
 | No Chat Reports | Mod |
 | SkinsRestorer | Mod |
-| Voice Chat | Mod |
 | Tree Vein Miner | Mod |
 
 ---
