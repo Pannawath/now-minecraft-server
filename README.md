@@ -173,14 +173,6 @@ simulation-distance=5
 | `_baby` | เปลี่ยนสัตว์ให้กลายเป็นสัตว์ตัวเล็ก/เบบี้ถาวร |
 | `_silent` | ทำให้ม็อบเงียบสนิท ไม่ส่งเสียงร้องรบกวน (Silent: true) |
 
-### 6. Secret Psychological Horror Commands (คำสั่งลับแกล้งเพื่อนสำหรับ OP)
-| คำสั่งลับ | สิทธิ์ | คำอธิบาย |
-|---|---|---|
-| `/execute as <ชื่อเพื่อน> at @s run function horror:watcher` | OP | เสกเงามืดปริศนา (The Watcher) ไปยืนจ้องมองเพื่อนจากระยะไกล พอเดินเข้าใกล้จะสลายตัวเป็นควัน |
-| `/execute as <ชื่อเพื่อน> at @s run function horror:whisper` | OP | แอบยัดเสียงกระซิบ / เสียงฝีเท้า / เสียงถ้ำ เข้าหูเพื่อนคนนั้นคนเดียว (เพื่อนรอบข้างไม่ได้ยิน) |
-| `/execute as <ชื่อเพื่อน> at @s run function horror:flicker` | OP | สั่งให้หน้าจอเพื่อนดับวูบและมืดมนชั่วขณะ (Darkness) พร้อมเสียงลมหายใจ |
-| `/execute as <ชื่อเพื่อน> at @s run function horror:trigger_random` | OP | บังคับสุ่ม 1 ใน 3 เหตุการณ์หลอนใส่เพื่อนคนนั้นทันที |
-
 ---
 
 ## Backup
