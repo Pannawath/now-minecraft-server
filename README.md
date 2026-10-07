@@ -125,6 +125,64 @@ simulation-distance=5
 
 ---
 
+## Server Commands (คำสั่งทั้งหมดที่ใช้งานได้ในเซิร์ฟเวอร์)
+
+### 1. General & Performance Commands (คำสั่งทั่วไป & ตรวจสอบสมรรถนะ)
+| คำสั่ง | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/tabtps` | ทุกคน | แสดงค่า TPS, MSPT, CPU และ Memory ปัจจุบัน |
+| `/tabtps toggle actionbar` | ทุกคน | เปิด/ปิดการแสดงผล TPS บน Action Bar |
+| `/tabtps toggle bossbar` | ทุกคน | เปิด/ปิดการแสดงผล TPS บน Boss Bar |
+| `/tabtps reload` | OP | รีโหลดการตั้งค่าของม็อด TabTPS |
+| `/chunky start` | OP | เริ่มต้นการ Pre-generate Chunks ในแมพ |
+| `/chunky pause` / `/chunky continue` | OP | หยุดชั่วคราว / ทำการพรีเจนต่อ |
+| `/chunky cancel` | OP | ยกเลิกการพรีเจน Chunks |
+| `/servercore reload` | OP | รีโหลดการตั้งค่าการปรับแต่งสมรรถนะของ ServerCore |
+
+### 2. SkinsRestorer Commands (คำสั่งจัดการสกิน)
+| คำสั่ง | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/skin <ชื่อผู้เล่น>` | ทุกคน | เปลี่ยนสกินตามชื่อผู้เล่นคนนั้น (ดึงสกินจาก Mojang อัตโนมัติ) |
+| `/skin url <URL.png> [classic/slim]` | ทุกคน | เปลี่ยนสกินจากลิงก์รูปภาพสกิน (.png) โดยตรง |
+| `/skin clear` | ทุกคน | รีเซ็ตสกินกลับเป็นสกินดั้งเดิมของตนเอง |
+| `/skin update` | ทุกคน | อัปเดตสกินปัจจุบันให้เป็นข้อมูลล่าสุด |
+| `/sr reload` | OP | รีโหลดการตั้งค่าของ SkinsRestorer |
+
+### 3. Fabric Carpet Commands (คำสั่งจำลองผู้เล่น & เครื่องมือทดสอบ)
+| คำสั่ง | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/player <ชื่อบอท> spawn` | ทุกคน | เสกตัวละครบอทจำลอง (Fake Player) เพื่อเฝ้าฟาร์มหรือ AFK โหลด Chunks |
+| `/player <ชื่อบอท> kill` | ทุกคน | ลบตัวละครบอทจำลองออกจากโลก |
+| `/player <ชื่อบอท> action attack` | ทุกคน | สั่งให้บอทตีต่อเนื่อง (เหมาะกับฟาร์มม็อบ) |
+| `/tick rate <20>` | OP | ปรับความเร็ว Game Tick ของโลก (ค่าปกติคือ 20) |
+| `/tick warp <ticks>` | OP | เร่งเวลาล่วงหน้าเพื่อทดสอบกลไกเรดสโตนหรือฟาร์ม |
+| `/carpet <rule> <value>` | OP | ตรวจสอบหรือปรับเปลี่ยนกฎของ Carpet แบบเรียลไทม์ |
+
+### 4. Sitting & Interaction (คำสั่งระบบนั่ง)
+| คำสั่ง / พฤติกรรม | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `คลิกขวาที่บันได / Slab / พรม` | ทุกคน | นั่งบนเก้าอี้หรือพื้น (กดย่อตัว Shift เพื่อลุกขึ้น) |
+| `/sit` | ทุกคน | สั่งให้นั่งลงบนบล็อกที่กำลังยืนอยู่ทันที |
+
+### 5. Name Tag Commands (คำสั่งพิเศษจากป้ายชื่อ Datapack)
+ตั้งชื่อป้ายชื่อในทั่ง (Anvil) แล้วนำไปแปะใส่ม็อบ:
+| ชื่อบน Name Tag | ผลลัพธ์ |
+|---|---|
+| `_show` | ทำให้แสดงชื่อม็อบตลอดเวลา (CustomNameVisible: true) |
+| `_clear` | ซ่อนชื่อม็อบออก (ไม่แสดงป้ายชื่อลอย) |
+| `_baby` | เปลี่ยนสัตว์ให้กลายเป็นสัตว์ตัวเล็ก/เบบี้ถาวร |
+| `_silent` | ทำให้ม็อบเงียบสนิท ไม่ส่งเสียงร้องรบกวน (Silent: true) |
+
+### 6. Secret Psychological Horror Commands (คำสั่งลับแกล้งเพื่อนสำหรับ OP)
+| คำสั่งลับ | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/execute as <ชื่อเพื่อน> at @s run function horror:watcher` | OP | เสกเงามืดปริศนา (The Watcher) ไปยืนจ้องมองเพื่อนจากระยะไกล พอเดินเข้าใกล้จะสลายตัวเป็นควัน |
+| `/execute as <ชื่อเพื่อน> at @s run function horror:whisper` | OP | แอบยัดเสียงกระซิบ / เสียงฝีเท้า / เสียงถ้ำ เข้าหูเพื่อนคนนั้นคนเดียว (เพื่อนรอบข้างไม่ได้ยิน) |
+| `/execute as <ชื่อเพื่อน> at @s run function horror:flicker` | OP | สั่งให้หน้าจอเพื่อนดับวูบและมืดมนชั่วขณะ (Darkness) พร้อมเสียงลมหายใจ |
+| `/execute as <ชื่อเพื่อน> at @s run function horror:trigger_random` | OP | บังคับสุ่ม 1 ใน 3 เหตุการณ์หลอนใส่เพื่อนคนนั้นทันที |
+
+---
+
 ## Backup
 
 Previous PaperMC server files are archived in [Minecraft-see-backups-](https://github.com/Pannawath/Minecraft-see-backups-) under `minecarft-paper-backup-20261007/`.
@@ -135,3 +193,4 @@ Previous PaperMC server files are archived in [Minecraft-see-backups-](https://g
 
 - Server design inspired by [SteveKunG's iSMP](https://gist.github.com/SteveKunG/52087253c8411b621fcb8724cf00b0b6)
 - [Fabric](https://fabricmc.net/) | [Modrinth](https://modrinth.com/)
+
