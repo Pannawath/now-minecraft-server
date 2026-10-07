@@ -14,7 +14,7 @@
 scoreboard players set #global horror_interval 6000
 
 # 2. เปิด/ปิด การสุ่มหลอนอัตโนมัติ (1 = เปิดทำงาน, 0 = ปิดทำงาน)
-scoreboard players set #global horror_enabled 1
+scoreboard players set #global horror_enabled 0
 
 # 3. ระยะเวลาที่ร่าง Watcher จะยืนจ้องก่อนหายตัวไปเองหากไม่มีใครเดินไปใกล้ (หน่วยเป็น Ticks)
 #    - 160 Ticks = 8 วินาที
