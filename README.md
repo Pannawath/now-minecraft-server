@@ -64,6 +64,11 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 - Armor Statues — interact with armor stand heads to pose them
 - Cauldron Concrete — supplemental concrete conversion
 
+### `veinminer` (Profet's Veinminer)
+- ขุดแร่ทั้งสายพร้อมกันเมื่อ Sneak (ย่อตัว)
+- รองรับ Fortune, Silk Touch, หัก Durability ตามจำนวนบล็อกที่ขุด
+- ปรับแต่งตั้งค่าผ่านคำสั่ง: `/function veinminer:_config`
+
 ---
 
 ## Carpet Rules
