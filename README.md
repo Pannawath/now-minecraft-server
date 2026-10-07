@@ -36,6 +36,8 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 | TabTPS | 1.4.2 | Show TPS/MSPT/ping in tab list |
 | Tree Vein Miner | 4.3.2 | Fell entire trees at once |
 | SkinsRestorer | 15.12.6 | Offline-mode custom skins |
+| Sit! | 1.2.6.4+26.3 | Right-click stairs/slabs/carpets to sit |
+| OtterLib | 0.4.0.2+26.3 | Core library required for Sit! |
 | No Chat Reports | 26.3-v2.21.0 | Remove chat report signatures |
 
 ---
@@ -115,7 +117,7 @@ simulation-distance=5
 | Farmland -> Dirt via Pickaxe | Datapack |
 | Name Tag special commands | Datapack |
 | Phantom 5-day threshold | Pending (gamerule) |
-| Saddle-sit on stairs/slab | Pending (needs mod) |
+| Saddle-sit on stairs/slab | Mod (`Sit!`) |
 | TPS in F3 (Alt+2) via TabTPS | Mod |
 | No Chat Reports | Mod |
 | SkinsRestorer | Mod |
