@@ -9,9 +9,9 @@
 #    - 100 Ticks  = ทุกๆ 5 วินาที (หลอนหนักมาก/ถี่ยิบ)
 #    - 360 Ticks  = ทุกๆ 18 วินาที (ค่าเริ่มต้น)
 #    - 1200 Ticks = ทุกๆ 1 นาที
-#    - 6000 Ticks = ทุกๆ 5 นาที
+#    - 6000 Ticks = ทุกๆ 5 นาที (ค่าปัจจุบัน)
 #    - 24000 Ticks = ทุกๆ 20 นาที (หลอนเนียนๆ นานๆ ที)
-scoreboard players set #global horror_interval 360
+scoreboard players set #global horror_interval 6000
 
 # 2. เปิด/ปิด การสุ่มหลอนอัตโนมัติ (1 = เปิดทำงาน, 0 = ปิดทำงาน)
 scoreboard players set #global horror_enabled 1
