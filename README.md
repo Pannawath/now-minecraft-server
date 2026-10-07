@@ -12,7 +12,7 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 | Minecraft Version | 26.3 (1.21.4) |
 | Server Engine | Fabric + Loader 0.19.5 |
 | Host Spec | AMD FX-6350, 16 GB RAM, 440 GB SSD |
-| Heap | 6 GB (-Xmx6G) |
+| Heap | 12 GB (-Xmx12G -Xms4G) |
 | View Distance | 7 chunks |
 | Simulation Distance | 5 chunks |
 
