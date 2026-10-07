@@ -38,6 +38,7 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 | SkinsRestorer | 15.12.6 | Offline-mode custom skins |
 | Sit! | 1.2.6.4+26.3 | Right-click stairs/slabs/carpets to sit |
 | OtterLib | 0.4.0.2+26.3 | Core library required for Sit! |
+| Image2Map | 0.15.0+26.3 | Create custom image maps/posters via /mapcreate |
 | No Chat Reports | 26.3-v2.21.0 | Remove chat report signatures |
 
 ---
@@ -158,11 +159,16 @@ simulation-distance=5
 | `/tick warp <ticks>` | OP | เร่งเวลาล่วงหน้าเพื่อทดสอบกลไกเรดสโตนหรือฟาร์ม |
 | `/carpet <rule> <value>` | OP | ตรวจสอบหรือปรับเปลี่ยนกฎของ Carpet แบบเรียลไทม์ |
 
-### 4. Sitting & Interaction (คำสั่งระบบนั่ง)
+### 4. Image2Map Commands (คำสั่งสร้างแผนที่รูปภาพ / โปสเตอร์)
+| คำสั่ง | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/mapcreate <URL_รูปภาพ>` | OP / ทุกคน | สร้างแผนที่รูปภาพจากอินเทอร์เน็ต (.png/.jpg) เพื่อนำไปแปะใน Item Frame |
+
+### 5. Sitting & Interaction (คำสั่งระบบนั่ง)
 | คำสั่ง / พฤติกรรม | สิทธิ์ | คำอธิบาย |
 |---|---|---|
-| `คลิกขวาที่บันได / Slab / พรม` | ทุกคน | นั่งบนเก้าอี้หรือพื้น (กดย่อตัว Shift เพื่อลุกขึ้น) |
-| `/sit` | ทุกคน | สั่งให้นั่งลงบนบล็อกที่กำลังยืนอยู่ทันที |
+| `คลิกขวาที่บันได / Slab / พรม` | ทุกคน | นั่งเก้าอี้ตามปกติ (กดย่อตัว Shift เพื่อลุกขึ้น) |
+| `/trigger sit` หรือ `/sit` | ทุกคน | นั่งลงได้ทุกที่ที่ยืนอยู่ทันที (บนดิน, บล็อกเรียบ, บนหลังคา ฯลฯ) |
 
 ### 5. Name Tag Commands (คำสั่งพิเศษจากป้ายชื่อ Datapack)
 ตั้งชื่อป้ายชื่อในทั่ง (Anvil) แล้วนำไปแปะใส่ม็อบ:
