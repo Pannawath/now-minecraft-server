@@ -69,6 +69,10 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 - รองรับ Fortune, Silk Touch, หัก Durability ตามจำนวนบล็อกที่ขุด
 - ปรับแต่งตั้งค่าผ่านคำสั่ง: `/function veinminer:_config`
 
+### `full_ghast_ahead` (Full Ghast Ahead by Profet)
+- ปรับให้ Happy Ghasts บินเร็วขึ้น 2× ขณะควบคุม/ขี่ (ปรับได้ตั้งแต่ 1× ถึง 4×)
+- ปรับแต่งตั้งค่าผ่านคำสั่ง: `/function full_ghast_ahead:settings`
+
 ---
 
 ## Carpet Rules
