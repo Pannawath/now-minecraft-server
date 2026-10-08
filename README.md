@@ -26,8 +26,6 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 ```text
 pannawat-minecraft-server/
 ├── config/                         # ไฟล์คอนฟิกของม็อดต่างๆ
-│   ├── horror/
-│   │   └── settings.mcfunction    # ตั้งค่าระบบหลอน (ช่วงเวลา, เปิด/ปิด)
 │   ├── sit!/
 │   │   ├── server-config.json     # ตั้งค่าบล็อกที่นั่งได้ (stairs, slabs, carpets, full-blocks)
 │   │   └── sitting-config.json    # ตั้งค่าการนั่ง (hand-sitting: false)
@@ -40,11 +38,8 @@ pannawat-minecraft-server/
 │   ├── ismp_custom_drops.zip      # ดรอปไอเทมพิเศษ (Elytra, หัวมังกร, กล่อง Shulker)
 │   ├── ismp_qol_mechanics.zip     # ระบบ QoL (หายใจในฝน, ป้ายชื่อม็อบ, นอนคนเดียว)
 │   ├── profets_timber.zip         # ระบบตัดไม้ทั้งต้นพร้อมแอนิเมชัน
-│   ├── stealth_horror_pack.zip    # ระบบจิตวิทยาสยองขวัญสุ่มหลอน
 │   ├── vanilla_tweaks_suite.zip   # ระบบ AFK Display และ Cauldron Concrete
 │   └── veinminer-1.3.6.zip        # ระบบขี่ขุดแร่ทั้งสาย
-├── docs/
-│   └── secret_commands.txt        # คำสั่งลับ OP แกล้งเพื่อน
 ├── carpet.conf                     # กฎการทำงานของ Fabric Carpet
 ├── mods-list.txt                   # รายชื่อม็อดที่ติดตั้งทั้งหมดในเซิร์ฟเวอร์
 ├── server.properties               # การตั้งค่าเซิร์ฟเวอร์หลัก (Seed ถาวร)
@@ -92,11 +87,6 @@ pannawat-minecraft-server/
 - ขุดแร่ทั้งสายพร้อมกันเมื่อ Sneak (ย่อตัว) ขณะขุด
 - รองรับ Fortune, Silk Touch และหัก Durability ตามจำนวนบล็อกจริง
 - สลับเปิด/ปิดการทำงานเฉพาะตัวผู้เล่นได้ด้วยคำสั่ง `/trigger ovm.toggle`
-
-### `stealth_horror_pack` (Stealth Psychological Horror)
-- ระบบจิตวิทยาสยองขวัญ สุ่มเหตุการณ์หลอนใส่ผู้เล่นในโหมด Survival
-- ปรับแต่งความถี่และเปิด/ปิดได้ใน `config/horror/settings.mcfunction`
-- ปัจจุบันตั้งค่า: ปิดการทำงานสุ่มอัตโนมัติ (`horror_enabled 0`) แต่ OP สามารถกดสั่งหลอนแบบ Manual ได้
 
 ### `FullGhastAhead-1.0.0` (Full Ghast Ahead)
 - ใส่ Saddle ขี่ Happy Ghast บินบนท้องฟ้าได้
@@ -176,18 +166,7 @@ Configured in `world/carpet.conf`:
 | `/tick warp <ticks>` | OP | เร่งเวลาล่วงหน้าเพื่อทดสอบกลไกเรดสโตนหรือฟาร์ม |
 | `/carpet <rule> <value>` | OP | ตรวจสอบหรือปรับเปลี่ยนกฎของ Carpet แบบเรียลไทม์ |
 
-### 4. Horror Pack Commands (คำสั่งม็อดผีจิตวิทยาสำหรับ OP)
-| คำสั่ง | สิทธิ์ | คำอธิบาย |
-|---|---|---|
-| `/scoreboard players set #global horror_enabled 1` | OP | เปิดระบบสุ่มหลอนอัตโนมัติ (ใส่ `0` เพื่อปิด) |
-| `/scoreboard players set #global horror_interval 6000` | OP | ปรับรอบเวลาการหลอน (หน่วยเป็น Ticks: 6000 = ทุก 5 นาที, 360 = ทุก 18 วิ) |
-| `/function horror:auto_trigger` | OP | บังคับสุ่มเหตุการณ์หลอนใส่ผู้เล่น 1 คนทันที |
-| `/execute as <ชื่อเพื่อน> at @s run function horror:watcher` | OP | เสกเงา Watcher ไปยืนจ้องเพื่อนคนนั้นทันที |
-| `/execute as <ชื่อเพื่อน> at @s run function horror:whisper` | OP | แอบยัดเสียงกระซิบเข้าหูเพื่อนคนนั้นคนเดียว |
-| `/execute as <ชื่อเพื่อน> at @s run function horror:flicker` | OP | สั่งให้หน้าจอเพื่อนคนนั้นมืดวูบชั่วขณะ |
-| `/execute as <ชื่อเพื่อน> at @s run function horror:trigger_random` | OP | บังคับสุ่ม 1 ใน 6 เหตุการณ์หลอนใส่เพื่อนคนนั้นทันที |
-
-### 5. Having a Blast Commands (คำสั่งควบคุมการซ่อมหลุมระเบิด - ทุกคนใช้ได้)
+### 4. Having a Blast Commands (คำสั่งควบคุมการซ่อมหลุมระเบิด - ทุกคนใช้ได้)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/havingablast status` | ทุกคน | ดูสถานะระบบซ่อมหลุมระเบิดและจำนวนบล็อกที่กำลังรอซ่อม |
@@ -196,7 +175,7 @@ Configured in `world/carpet.conf`:
 | `/havingablast speed <เปอร์เซ็นต์>` | ทุกคน | ปรับความเร็วในการวางบล็อกซ่อมแซม 25-400% (เช่น `/havingablast speed 100`) |
 | `/havingablast repair <ชนิด>` | ทุกคน | สลับเปิด/ปิดการซ่อมของระเบิดแต่ละชนิด (`creeper`, `tnt`, `bed`, `anchor`, `crystal`, `fireball`, `wither`) |
 
-### 6. Datapack Utility & Fun Commands (คำสั่งฟังก์ชันพิเศษ)
+### 5. Datapack Utility & Fun Commands (คำสั่งฟังก์ชันพิเศษ)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/function full_ghast_ahead:settings` | OP/ทุกคน | เปิดเมนูปรับแต่งความเร็วในการขี่ Ghast (1×, 1.5×, 2×, 2.5×, 3×) |
@@ -204,7 +183,7 @@ Configured in `world/carpet.conf`:
 | `/function veinminer:_enable` | OP | เปิดการทำงานของ Veinminer |
 | `/function veinminer:_disable` | OP | ปิดการทำงานของ Veinminer |
 
-### 7. Server Administration & Optimization Commands (คำสั่งดูแลเซิร์ฟเวอร์)
+### 6. Server Administration & Optimization Commands (คำสั่งดูแลเซิร์ฟเวอร์)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/save-all flush` | OP | บังคับบันทึกข้อมูลโลกและผู้เล่นทั้งหมดลงดิสก์ทันที |
@@ -224,7 +203,7 @@ Configured in `world/carpet.conf`:
 | `/tab cpu` | OP | ตรวจสอบปริมาณการใช้งาน CPU ของเซิร์ฟเวอร์ |
 | `/tab reload` | OP | รีโหลดการตั้งค่าของ TAB |
 
-### 8. Special Name Tag Features (ฟังก์ชันป้ายชื่อพิเศษ)
+### 7. Special Name Tag Features (ฟังก์ชันป้ายชื่อพิเศษ)
 ตั้งชื่อบน Name Tag ผ่านทั่ง (Anvil) แล้วนำไปแปะใส่ม็อบ:
 - `_show` : แสดงป้ายชื่อม็อบตลอดเวลา (CustomNameVisible: true)
 - `_clear` : ซ่อนป้ายชื่อม็อบออก
