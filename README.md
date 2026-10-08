@@ -143,6 +143,16 @@ Configured in `world/carpet.conf`:
 | `/execute as <ชื่อเพื่อน> at @s run function horror:flicker` | OP | สั่งให้หน้าจอเพื่อนคนนั้นมืดวูบชั่วขณะ |
 | `/execute as <ชื่อเพื่อน> at @s run function horror:trigger_random` | OP | บังคับสุ่ม 1 ใน 6 เหตุการณ์หลอนใส่เพื่อนคนนั้นทันที |
 
+### 5. Having a Blast Commands (คำสั่งควบคุมการซ่อมหลุมระเบิด - ทุกคนใช้ได้)
+| คำสั่ง | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/havingablast status` | ทุกคน | ดูสถานะระบบซ่อมหลุมระเบิดและจำนวนบล็อกที่กำลังรอซ่อม |
+| `/havingablast now` | ทุกคน | บังคับให้เริ่มซ่อมแซมบล็อกที่ค้างอยู่ทั้งหมดทันที |
+| `/havingablast delay <วินาที>` | ทุกคน | ปรับเวลาหน่วงก่อนเริ่มซ่อมหลุมระเบิด (เช่น `/havingablast delay 3`) |
+| `/havingablast speed <เปอร์เซ็นต์>` | ทุกคน | ปรับความเร็วในการวางบล็อกซ่อมแซม 25-400% (เช่น `/havingablast speed 100`) |
+| `/havingablast repair <ชนิด>` | ทุกคน | สลับเปิด/ปิดการซ่อมของระเบิดแต่ละชนิด (`creeper`, `tnt`, `bed`, `anchor`, `crystal`, `fireball`, `wither`) |
+| `/hab <...>` | ทุกคน | ทางลัดคำสั่งย่อ ใช้แทน `/havingablast` ได้ทุกฟังก์ชัน |
+
 ### 5. Server Administration Commands (คำสั่งดูแลเซิร์ฟเวอร์)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
