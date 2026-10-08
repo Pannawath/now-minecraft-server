@@ -1,0 +1,17 @@
+{
+  "creeperRepair": true,
+  "tntRepair": true,
+  "bedRepair": true,
+  "anchorRepair": true,
+  "crystalRepair": true,
+  "fireballRepair": true,
+  "witherRepair": true,
+  "repairDelaySeconds": 3.0,
+  "repairSpeed": 4.0,
+  "maxPendingBlocks": 4096,
+  "visuals": true,
+  "intensity": 1.0,
+  "maxDebris": 128,
+  "pops": true,
+  "repairAnimation": true
+}

@@ -43,6 +43,7 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 | OtterLib | 0.4.0.2+26.3 | Core library required for Sit! |
 | Image2Map | 0.15.0+26.3 | Create custom image maps/posters via `/image2map create` |
 | No Chat Reports | 26.3-v2.21.0 | Remove chat report signatures |
+| Having a Blast | 0.2.8+26.3 | Cartoon explosions & auto-healing craters (Creeper/TNT/etc.) |
 
 ---
 
