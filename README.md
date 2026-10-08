@@ -89,8 +89,17 @@ pannawat-minecraft-server/
 - สลับเปิด/ปิดการทำงานเฉพาะตัวผู้เล่นได้ด้วยคำสั่ง `/trigger ovm.toggle`
 
 ### `FullGhastAhead-1.0.0` (Full Ghast Ahead)
-- ใส่ Saddle ขี่ Happy Ghast บินบนท้องฟ้าได้
-- เมนูคำสั่ง `/function full_ghast_ahead:settings` ปรับความเร็วในการบินได้ (1× ถึง 3×)
+- ใส่ Saddle (อานม้า) ขี่ Ghast บินบนท้องฟ้าได้ โดยคลิกขวาใส่ Ghast เพื่อสวมอาน แล้วคลิกขวาเพื่อขึ้นขี่ (กด Spacebar เพื่อบินขึ้น, WASD เพื่อควบคุมทิศทาง, Shift เพื่อลง)
+- **การปรับความเร็วในการบิน (Flight Speed Adjustment):**
+  - **วิธีที่ 1 (ผ่านเมนูอินเตอร์แอคทีฟ):**
+    - พิมพ์คำสั่ง `/function full_ghast_ahead:settings` ในช่องแชท
+    - จะมีหน้าต่างข้อความขึ้นในช่องแชท ให้คลิกเลือกความเร็วที่ต้องการ (ตั้งแต่ 1× ถึง 3×)
+  - **วิธีที่ 2 (พิมพ์คำสั่งโดยตรง):**
+    - ความเร็วปกติ (1× / Vanilla): `/function full_ghast_ahead:set {speed:1.0}`
+    - ความเร็ว 1.5×: `/function full_ghast_ahead:set {speed:1.5}`
+    - ความเร็ว 2.0×: `/function full_ghast_ahead:set {speed:2.0}`
+    - ความเร็ว 2.5×: `/function full_ghast_ahead:set {speed:2.5}`
+    - ความเร็ว 3.0×: `/function full_ghast_ahead:set {speed:3.0}`
 
 ### `ismp_custom_drops`
 - Ender Dragon ดรอป Elytra + Dragon Head ทุกครั้งที่ตาย
