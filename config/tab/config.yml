@@ -5,7 +5,7 @@ header-footer:
     default:
       header:
         - "<#55FF55>&l● <#AAFFAA>&liSMP SURVIVAL &r&7| &fวันในเกม: <#FFD700>&lDay %world:day% &r&7| &fเปิดมาแล้ว: <#55FFFF>%server:uptime%"
-        - "&7CPU: <#55FF55>%spark:cpu_process 10s% &7| &7GPU: <#AAAAAA>0% &7(N/A) &7| &7RAM: <#55FFFF>%memory-used-gb%GB &7/ &f%memory-max-gb%GB &7| &aTPS: &f%tps%"
+        - "&7CPU: <#55FF55>%spark:cpu_process 10s% &7| &7GPU: <#AAAAAA>0%% &7(N/A) &7| &7RAM: <#55FFFF>%memory-used-gb%GB &7/ &f%memory-max-gb%GB &7| &aTPS: &f%tps%"
         - "<#AAFFAA>&l[ &f&l%online% &r<#AAFFAA>&l Online ] &r&7(Max 10)"
         - ""
       footer:
