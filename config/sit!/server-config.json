@@ -5,10 +5,10 @@
   "keep-active": true,
   "sit-while-seated": false,
   "preset-blocks": {
-    "stairs": false,
-    "slabs": false,
-    "carpets": false,
-    "full-blocks": false
+    "stairs": true,
+    "slabs": true,
+    "carpets": true,
+    "full-blocks": true
   },
   "height-difference-limit": {
     "above": 1.0,
