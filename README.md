@@ -1,6 +1,6 @@
 # now-minecraft-server
 
-**iSMP-style Minecraft survival server** running Fabric 1.21.4 (26.3)  
+**iSMP-style Minecraft survival server** running Fabric 26.3  
 Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b621fcb8724cf00b0b6)
 
 ---
@@ -9,8 +9,9 @@ Inspired by [iSMP by SteveKunG](https://gist.github.com/SteveKunG/52087253c8411b
 
 | Key | Value |
 |---|---|
-| Minecraft Version | 26.3 (1.21.4) |
-| Server Engine | Fabric + Loader 0.19.5 |
+| Minecraft Version | 26.3 (Fabric Loader 0.19.5) |
+| World Seed | `-4265238830911723869` (Locked) |
+| Server Engine | Fabric |
 | Host Spec | AMD FX-6350, 16 GB RAM, 440 GB SSD |
 | Heap | 12 GB (-Xmx12G -Xms4G) |
 | View Distance | 7 chunks |
