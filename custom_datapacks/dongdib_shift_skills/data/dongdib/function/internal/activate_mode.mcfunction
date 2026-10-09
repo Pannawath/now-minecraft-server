@@ -21,5 +21,5 @@ execute if score @s d_mode matches 1 run scoreboard players set @s timber.off 0
 execute if score @s d_mode matches 6 run scoreboard players set @s veinminer.off 0
 
 # Trigger immediate one-time actions
-execute if score @s d_mode matches 2 run function dongdib:skills/plant_area
-execute if score @s d_mode matches 3 run function dongdib:skills/slime_radar_init
+execute if score @s d_mode matches 2 at @s run function dongdib:skills/plant_area
+execute if score @s d_mode matches 3 at @s run function dongdib:skills/slime_radar_init
