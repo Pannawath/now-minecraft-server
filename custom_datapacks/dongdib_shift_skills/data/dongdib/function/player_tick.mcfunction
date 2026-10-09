@@ -3,8 +3,14 @@
 # d_is_sneak: 0 = unpressed previously, 1 = pressed previously
 # d_curr_sneak: current tick sneak state
 
+# Ensure player scoreboards are always initialized (not null)
+execute unless score @s d_is_sneak matches 0..1 run scoreboard players set @s d_is_sneak 0
+execute unless score @s d_charge matches 0.. run scoreboard players set @s d_charge 0
+execute unless score @s d_mode matches 0.. run scoreboard players set @s d_mode 0
+execute unless score @s d_timer matches 0.. run scoreboard players set @s d_timer 0
+
 scoreboard players set @s d_curr_sneak 0
-execute if predicate timber:is_sneaking run scoreboard players set @s d_curr_sneak 1
+execute if predicate dongdib:is_sneaking run scoreboard players set @s d_curr_sneak 1
 
 # Rising edge: d_curr_sneak = 1 and d_is_sneak = 0
 execute if score @s d_curr_sneak matches 1 if score @s d_is_sneak matches 0 run function dongdib:internal/shift_press
