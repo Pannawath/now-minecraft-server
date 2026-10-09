@@ -39,11 +39,9 @@ pannawat-minecraft-server/
 │   ├── skinsrestorer/             # คอนฟิกจัดการสกินออฟไลน์
 │   └── tab/                       # คอนฟิกแท็บลิสต์ หัว/ท้ายกระดาน
 ├── custom_datapacks/               # ซอร์สโค้ด Datapack ที่พัฒนาขึ้นเฉพาะเซิร์ฟเวอร์
-│   ├── dongdib_creative_world/    # ระบบสลับโลก Creative (/c, /c leave) และเซฟพิกัดย้อนกลับ
 │   └── dongdib_shift_skills/      # ระบบสกิลกด Shift (Lumberjack, Utility Tracker, Veinminer)
 ├── datapacks/                      # ชุด Datapacks (.zip) ประจำเซิร์ฟเวอร์
 │   ├── FullGhastAhead-1.0.0.zip   # ระบบขี่ Ghast และปรับความเร็ว
-│   ├── dongdib_creative_world.zip # สลับโลกสร้างสรรค์ แยกช่องเก็บของ และสิทธิ์ OP ชั่วคราว
 │   ├── dongdib_custom_drops.zip   # ดรอปไอเทมพิเศษ (Elytra, หัวมังกร, กล่อง Shulker)
 │   ├── dongdib_qol_mechanics.zip  # ระบบ QoL (หายใจในฝน, ป้ายชื่อม็อบ, นอนคนเดียว, รีเฟรชสกิน)
 │   ├── dongdib_shift_skills.zip   # สกิลกด Shift (Lumberjack, Utility Tracker, Veinminer ไร้แล็ก)
@@ -73,7 +71,7 @@ pannawat-minecraft-server/
 | Fabric Carpet | 26.3+v260915 | Server rules, `/tick`, `/player`, debug tools |
 | Multiworld Bundle (Fantasy) | 1.14.2 (0.8.4+26.3) | จัดการสร้างและโหลดมิติโลกเสริม (Creative World: `multiworld:creative`) |
 | Dimensional Inventories | 2.2.2+26.3 | แยกกระเป๋า ไอเทม หลอดอาหาร เลเวล ระหว่างโลก Survival และ Creative |
-| WorldEdit | 7.4.6-beta-02 | เครื่องมือปรับแต่งพื้นที่และบล็อกสำหรับโลก Creative |
+| WorldEdit | 7.4.6-beta-02 | เครื่องมือปรับแต่งพื้นที่และบล็อกสำหรับผู้ดูแลระบบ (OP) |
 | Servux | 26.3-0.12.2 | Server-side litematica support |
 | Syncmatica | 26.3-0.3.20 | Share & sync litematica schematics |
 | TabTPS | 1.4.2 | Show TPS/MSPT/ping in tab list & action bar |
@@ -87,34 +85,28 @@ pannawat-minecraft-server/
 | No Chat Reports | 26.3-v2.21.0 | Remove chat report signatures |
 | Having a Blast | 0.2.8+26.3 | Cartoon explosions & auto-healing craters (Creeper/TNT/Wither/etc.) |
 | Spark | 1.10.187 | วิเคราะห์ประสิทธิภาพ CPU, RAM, TPS, MSPT และ Garbage Collection |
-| Command Aliases | 1.1.0+mc26.3 | สร้างทางลัดคำสั่งและแม็ปคำสั่งลัด `/c` |
+| Command Aliases | 1.1.0+mc26.3 | สร้างทางลัดคำสั่งและแม็ปคำสั่งลัด (`/help`, etc.) |
 
 ---
 
 ## Datapacks
 
-### 1. `dongdib_creative_world` (ระบบโลก Creative แยกมิติ)
-- สลับไปสร้างสิ่งก่อสร้างในโลก Creative ได้ตลอดเวลาผ่านคำสั่ง `/c`
-- **ระบบเซฟพิกัดย้อนกลับ (Safe Marker Return):** จดจำพิกัดเดิมในโลก Overworld ก่อนวาร์ป เมื่อพิมพ์ `/c leave` จะวาร์ปกลับมายังพิกัดเดิมแม่นยำ 100%
-- **ระบบแยกกระเป๋าอิสระ (Isolated Inventories):** ทำงานร่วมกับ `dimensional-inventories` เข้าโลก Creative ครั้งแรกช่องเก็บของจะโล่ง และเมื่อสลับกลับ Survival ไอเทม เลเวล หลอดเลือดจะกลับมาครบถ้วน
-- **สิทธิ์คำสั่งและ WorldEdit ชั่วคราว:** มอบสิทธิ์ Operator Level 2 เฉพาะขณะอยู่ในโลก Creative เพื่อให้ใช้คำสั่งสร้างและ WorldEdit ได้อย่างอิสระ และปลดสิทธิ์ออกทันทีเมื่อกลับโลกปกติ
-
-### 2. `dongdib_shift_skills` (ระบบสกิลกด Shift ต่อเนื่อง)
+### 1. `dongdib_shift_skills` (ระบบสกิลกด Shift ต่อเนื่อง)
 - กดย่อตัว (Shift) ติดต่อกัน 10 ครั้ง เพื่อเปิดใช้งานสกิลตามไอเทมที่ถือในมือหลักหรือมือซ้าย (Mainhand / Offhand):
   1. **Lumberjack (ขวานทุกระดับ):** สลับเปิด/ปิดระบบโค่นต้นไม้ทั้งต้น
   2. **Utility Tracker (เข็มทิศ / นาฬิกา):** แสดงพิกัด X Y Z และทิศทางบน Actionbar ตลอดเวลาที่ถือไอเทม
   3. **Veinminer (พลั่ว / อีเต้อทุกระดับ):** สลับเปิด/ปิดระบบขุดแร่ทั้งสายรายบุคคล
 
-### 3. `FullGhastAhead-1.0.0` (Full Ghast Ahead)
+### 2. `FullGhastAhead-1.0.0` (Full Ghast Ahead)
 - ใส่ Saddle (อานม้า) ขี่ Ghast บินบนท้องฟ้าได้ โดยคลิกขวาใส่ Ghast เพื่อสวมอาน แล้วคลิกขวาเพื่อขึ้นขี่ (Spacebar เพื่อบินขึ้น, WASD เพื่อบังคับทิศทาง, Shift เพื่อลง)
 - ปรับความเร็วในการบินได้ผ่านคำสั่ง `/function full_ghast_ahead:settings` หรือกำหนดตัวเลขตรง เช่น `/function full_ghast_ahead:set {speed:2.0}`
 
-### 4. `dongdib_custom_drops`
+### 3. `dongdib_custom_drops`
 - Ender Dragon ดรอป Elytra + Dragon Head ทุกครั้งที่ตาย
 - Shulker ดรอป 2 Shells เสมอ + โอกาส 25% ดรอป Shulker Box ทั้งกล่อง
 - ผู้เล่นดรอป Player Head เมื่อตาย
 
-### 5. `dongdib_qol_mechanics`
+### 4. `dongdib_qol_mechanics`
 - **One Player Sleep:** นอนข้ามคืนได้เพียงคนเดียว (`playersSleepingPercentage 1`)
 - สัตว์น้ำหายใจในสายฝนได้เมื่อขึ้นมาบนบก
 - ปลาไม่ว่ายหนีเมื่อผู้เล่นย่อตัว (Sneak)
@@ -123,10 +115,10 @@ pannawat-minecraft-server/
 - สั่งการป้ายชื่อม็อบ: `_show`, `_clear`, `_baby`, `_silent`
 - **Skin Persistence on Rejoin:** ตรวจจับการเข้าเซิร์ฟเวอร์ใหม่และสั่งรีเฟรชสกินอัตโนมัติภายใน 2 วินาที ป้องกันปัญหาสกินหาย
 
-### 6. `profets_timber` & `profets_veinminer`
+### 5. `profets_timber` & `profets_veinminer`
 - โค่นต้นไม้และขุดแร่ทั้งสายแบบแอนิเมชัน สามารถเปิด/ปิดเฉพาะตัวผู้เล่นได้ด้วย `/trigger timber` และ `/trigger veinminer`
 
-### 7. `vanilla_tweaks_suite`
+### 6. `vanilla_tweaks_suite`
 - **AFK Display:** แสดงสถานะ [AFK] บนหัวผู้เล่นเมื่อไม่ได้ขยับตัว
 - **Cauldron Concrete:** โยนผง Concrete Powder ลงหม้อต้มน้ำระดับน้ำเต็ม เปลี่ยนเป็นบล็อก Concrete ทันที
 
@@ -156,17 +148,11 @@ pannawat-minecraft-server/
 
 | คำสั่ง | คำอธิบาย |
 |---|---|
-| `/help` หรือ `/help 1` | เปิดหน้าคู่มือหน้า 1 (ระบบการเล่น, วาร์ปโลก Creative, คำสั่งทั่วไป, สกิน, โค่นต้นไม้, ขุดแร่, สกิล Shift) |
+| `/help` หรือ `/help 1` | เปิดหน้าคู่มือหน้า 1 (ระบบการเล่น, คำสั่งทั่วไป, สกิน, โค่นต้นไม้, ขุดแร่, สกิล Shift) |
 | `/help 2` | เปิดหน้าคู่มือหน้า 2 (ยานพาหนะ Ghast ปรับสปีด, บอท Carpet AFK, วาดแผนที่, ตรวจเช็กระบบ) |
 | `/trigger help set <หน้า>` | เลือกเปิดหน้าคู่มือเจาะจงผ่าน Trigger (หน้า 1 หรือ 2) |
 
-### 1. Creative World & Dimension Commands (ระบบโลกสร้างสรรค์)
-| คำสั่ง | สิทธิ์ | คำอธิบาย |
-|---|---|---|
-| `/c` หรือ `/creative` | ทุกคน | วาร์ปเข้าสู่โลก Creative กลางเวหา, บันทึกพิกัดเดิม, สลับกระเป๋าเป็นของโลก Creative และรับสิทธิ์ใช้ WorldEdit ชั่วคราว |
-| `/c leave` หรือ `/creative leave` | ทุกคน | วาร์ปกลับสู่โลก Survival ณ พิกัดเดิมก่อนวาร์ป พร้อมคืนกระเป๋า ไอเทม เลเวลเดิม และถอนสิทธิ์พิเศษออก |
-
-### 2. General & QoL Commands (คำสั่งทั่วไปและระบบผู้เล่น)
+### 1. General & QoL Commands (คำสั่งทั่วไปและระบบผู้เล่น)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/sit` | ทุกคน | นั่งลงบนบล็อกหรือพื้นตรงจุดที่มอง/ยืนอยู่ทันที (ลุกขึ้นด้วยการกด Shift) |
@@ -177,7 +163,7 @@ pannawat-minecraft-server/
 | `/syncmatica` | ทุกคน | จัดการและแชร์แบบแปลน Litematica บนเซิร์ฟเวอร์ร่วมกับผู้เล่นคนอื่น |
 | `/voicechat test` | ทุกคน | ทดสอบการเชื่อมต่อไมโครโฟนและระบบ Simple Voice Chat |
 
-### 3. SkinsRestorer Commands (คำสั่งจัดการสกิน - คูลดาวน์ 0 วินาที)
+### 2. SkinsRestorer Commands (คำสั่งจัดการสกิน - คูลดาวน์ 0 วินาที)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/skin <ชื่อผู้เล่น>` | ทุกคน | เปลี่ยนสกินตามชื่อผู้เล่นคนนั้น (ดึงสกินจาก Mojang อัตโนมัติ) |
@@ -187,7 +173,7 @@ pannawat-minecraft-server/
 | `/skins` | ทุกคน | เปิดหน้าต่างเมนู GUI เลือกสกิน |
 | `/sr reload` | OP | รีโหลดการตั้งค่าของ SkinsRestorer |
 
-### 4. Full Ghast Ahead Commands (คำสั่งขี่ Ghast และปรับความเร็ว)
+### 3. Full Ghast Ahead Commands (คำสั่งขี่ Ghast และปรับความเร็ว)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/function full_ghast_ahead:settings` | OP/ทุกคน | เปิดเมนูปรับความเร็วการบินของ Ghast บนหน้าต่างแชต (คลิกเลือก 1x ถึง 4x ได้ทันที) |
@@ -198,7 +184,7 @@ pannawat-minecraft-server/
 | `/function full_ghast_ahead:set {speed:300}` | OP | ตั้งความเร็ว Ghast เป็น 3x (10.8 บล็อก/วินาที) |
 | `/function full_ghast_ahead:set {speed:400}` | OP | ตั้งความเร็ว Ghast เป็น 4x (14.4 บล็อก/วินาที - ความเร็วสูงสุด) |
 
-### 5. Fabric Carpet Commands (คำสั่งจำลองผู้เล่น & เฝ้าฟาร์ม)
+### 4. Fabric Carpet Commands (คำสั่งจำลองผู้เล่น & เฝ้าฟาร์ม)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/player <ชื่อบอท> spawn` | ทุกคน | เสกตัวละครบอทจำลอง (Fake Player) เพื่อเฝ้าฟาร์มหรือ AFK โหลด Chunks |
@@ -212,16 +198,16 @@ pannawat-minecraft-server/
 | `/tick warp <ticks>` | OP | เร่งเวลาล่วงหน้าเพื่อทดสอบกลไกเรดสโตนหรือฟาร์ม |
 | `/carpet <rule> <value>` | OP | ตรวจสอบหรือปรับเปลี่ยนกฎของ Carpet แบบเรียลไทม์ |
 
-### 6. WorldEdit Commands (คำสั่งสร้างพื้นที่ในโลก Creative)
+### 5. WorldEdit Commands (คำสั่งสร้างพื้นที่สำหรับ OP)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
-| `//wand` | OP / Creative | เสกขวานไม้ WorldEdit สำหรับมาร์กจุด Pos1 (คลิกซ้าย) และ Pos2 (คลิกขวา) |
-| `//set <บล็อก>` | OP / Creative | เติมบล็อกทั้งหมดในพื้นที่ที่เลือก |
-| `//replace <บล็อกเดิม> <บล็อกใหม่>` | OP / Creative | แทนที่บล็อกที่กำหนดเฉพาะในพื้นที่ที่เลือก |
-| `//copy` / `//paste` | OP / Creative | คัดลอกและวางสิ่งก่อสร้างตามพิกัดสัมพัทธ์ |
-| `//undo` / `//redo` | OP / Creative | ย้อนกลับคำสั่งหรือทำซ้ำการเปลี่ยนแปลงล่าสุด |
+| `//wand` | OP | เสกขวานไม้ WorldEdit สำหรับมาร์กจุด Pos1 (คลิกซ้าย) และ Pos2 (คลิกขวา) |
+| `//set <บล็อก>` | OP | เติมบล็อกทั้งหมดในพื้นที่ที่เลือก |
+| `//replace <บล็อกเดิม> <บล็อกใหม่>` | OP | แทนที่บล็อกที่กำหนดเฉพาะในพื้นที่ที่เลือก |
+| `//copy` / `//paste` | OP | คัดลอกและวางสิ่งก่อสร้างตามพิกัดสัมพัทธ์ |
+| `//undo` / `//redo` | OP | ย้อนกลับคำสั่งหรือทำซ้ำการเปลี่ยนแปลงล่าสุด |
 
-### 7. Diagnostics & Performance Commands (คำสั่งตรวจสอบและดูแลระบบ)
+### 6. Diagnostics & Performance Commands (คำสั่งตรวจสอบและดูแลระบบ)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/spark tps` | ทุกคน | ตรวจสอบค่า TPS เฉลี่ย (1m, 5m, 15m) และค่า MSPT |
