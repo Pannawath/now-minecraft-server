@@ -8,6 +8,7 @@ scoreboard objectives add d_sneak_stat custom:sneak_time
 scoreboard objectives add d_temp dummy
 scoreboard objectives add d_slime_timer dummy
 scoreboard objectives add d_farm_timer dummy
+scoreboard objectives add d_mob_timer dummy
 
 # Default constants
 scoreboard players set #c10 d_temp 10
