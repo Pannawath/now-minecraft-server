@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "commandMode": "COMMAND_CUSTOM",
+  "command": "help",
+  "actions": [
+    {
+      "command": "execute as %player:name% at %player:name% run trigger help set 1",
+      "commandType": "SERVER"
+    }
+  ],
+  "children": [
+    {
+      "child": "1",
+      "type": "literal",
+      "actions": [
+        {
+          "command": "execute as %player:name% at %player:name% run trigger help set 1",
+          "commandType": "SERVER"
+        }
+      ]
+    },
+    {
+      "child": "2",
+      "type": "literal",
+      "actions": [
+        {
+          "command": "execute as %player:name% at %player:name% run trigger help set 2",
+          "commandType": "SERVER"
+        }
+      ]
+    },
+    {
+      "child": "3",
+      "type": "literal",
+      "actions": [
+        {
+          "command": "execute as %player:name% at %player:name% run trigger help set 3",
+          "commandType": "SERVER"
+        }
+      ]
+    },
+    {
+      "child": "4",
+      "type": "literal",
+      "actions": [
+        {
+          "command": "execute as %player:name% at %player:name% run trigger help set 4",
+          "commandType": "SERVER"
+        }
+      ]
+    }
+  ]
+}

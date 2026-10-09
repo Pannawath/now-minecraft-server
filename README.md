@@ -151,11 +151,22 @@ pannawat-minecraft-server/
 
 ## Server Commands (คำสั่งทั้งหมดที่ใช้งานได้ในเซิร์ฟเวอร์)
 
+### 0. In-Game Help Menu (ระบบคู่มือช่วยเหลือในเกมแบบหลายหน้า)
+ผู้เล่นทุกคนสามารถเปิดอ่านคู่มือคำสั่งในเกมได้ตลอดเวลา โดยแบ่งออกเป็นหน้าๆ พร้อมปุ่มกดคลิกเปลี่ยนหน้าได้ทันที:
+
+| คำสั่ง | คำอธิบาย |
+|---|---|
+| `/help` หรือ `/help 1` | เปิดหน้าคู่มือหน้า 1 (คำสั่งทั่วไป, นั่ง, สกิน, ข้อมูลระบบ) |
+| `/help 2` | เปิดหน้าคู่มือหน้า 2 (โลก Creative, ระบบตัดไม้ทั้งต้น, ขุดแร่ทั้งสาย) |
+| `/help 3` | เปิดหน้าคู่มือหน้า 3 (ระบบขี่ Ghast ปรับสปีด, เช็กประสิทธิภาพเซิร์ฟเวอร์) |
+| `/help 4` | เปิดหน้าคู่มือหน้า 4 (สกิลกด Shift ย่อตัว 10 ครั้ง และกลไก QoL) |
+| `/trigger help set <หน้า>` | เลือกเปิดหน้าคู่มือเจาะจงผ่าน Trigger (หน้า 1 - 4) |
+
 ### 1. Creative World & Dimension Commands (ระบบโลกสร้างสรรค์)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
-| `/c` | ทุกคน | วาร์ปเข้าสู่โลก Creative กลางเวหา, บันทึกพิกัดเดิม, สลับกระเป๋าเป็นของโลก Creative และรับสิทธิ์ใช้ WorldEdit ชั่วคราว |
-| `/c leave` | ทุกคน | วาร์ปกลับสู่โลก Survival ณ พิกัดเดิมก่อนวาร์ป พร้อมคืนกระเป๋า ไอเทม เลเวลเดิม และถอนสิทธิ์พิเศษออก |
+| `/c` หรือ `/creative` | ทุกคน | วาร์ปเข้าสู่โลก Creative กลางเวหา, บันทึกพิกัดเดิม, สลับกระเป๋าเป็นของโลก Creative และรับสิทธิ์ใช้ WorldEdit ชั่วคราว |
+| `/c leave` หรือ `/creative leave` | ทุกคน | วาร์ปกลับสู่โลก Survival ณ พิกัดเดิมก่อนวาร์ป พร้อมคืนกระเป๋า ไอเทม เลเวลเดิม และถอนสิทธิ์พิเศษออก |
 
 ### 2. General & QoL Commands (คำสั่งทั่วไปและระบบผู้เล่น)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
@@ -165,10 +176,8 @@ pannawat-minecraft-server/
 | `/trigger veinminer` | ทุกคน | สลับเปิด/ปิดระบบขุดแร่ทั้งสายสำหรับตนเอง |
 | `/image2map create none <URL>` | ทุกคน | สร้างแผนที่รูปภาพขนาด 1x1 จากลิงก์รูปภาพอินเทอร์เน็ต |
 | `/image2map create <กว้าง> <สูง> none <URL>` | ทุกคน | สร้างแผนที่โปสเตอร์ขนาดใหญ่หลายแผ่น เช่น `/image2map create 2 2 none <URL>` |
-| `/tabtps` | ทุกคน | แสดงค่า TPS, MSPT, CPU และ Memory ปัจจุบันของเซิร์ฟเวอร์ |
-| `/tabtps toggle actionbar` | ทุกคน | เปิด/ปิดการแสดงผล TPS บน Action Bar ด้านล่างจอ |
-| `/tabtps toggle bossbar` | ทุกคน | เปิด/ปิดการแสดงผล TPS บน Boss Bar ด้านบนจอ |
 | `/syncmatica` | ทุกคน | จัดการและแชร์แบบแปลน Litematica บนเซิร์ฟเวอร์ร่วมกับผู้เล่นคนอื่น |
+| `/voicechat test` | ทุกคน | ทดสอบการเชื่อมต่อไมโครโฟนและระบบ Simple Voice Chat |
 
 ### 3. SkinsRestorer Commands (คำสั่งจัดการสกิน - คูลดาวน์ 0 วินาที)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
@@ -180,7 +189,18 @@ pannawat-minecraft-server/
 | `/skins` | ทุกคน | เปิดหน้าต่างเมนู GUI เลือกสกิน |
 | `/sr reload` | OP | รีโหลดการตั้งค่าของ SkinsRestorer |
 
-### 4. Fabric Carpet Commands (คำสั่งจำลองผู้เล่น & เฝ้าฟาร์ม)
+### 4. Full Ghast Ahead Commands (คำสั่งขี่ Ghast และปรับความเร็ว)
+| คำสั่ง | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/function full_ghast_ahead:settings` | OP/ทุกคน | เปิดเมนูปรับความเร็วการบินของ Ghast บนหน้าต่างแชต (คลิกเลือก 1x ถึง 4x ได้ทันที) |
+| `/function full_ghast_ahead:set {speed:100}` | OP | ตั้งความเร็ว Ghast เป็น 1x (3.6 บล็อก/วินาที - ความเร็ว Vanilla ปกติ) |
+| `/function full_ghast_ahead:set {speed:150}` | OP | ตั้งความเร็ว Ghast เป็น 1.5x (5.4 บล็อก/วินาที) |
+| `/function full_ghast_ahead:set {speed:200}` | OP | ตั้งความเร็ว Ghast เป็น 2x (7.2 บล็อก/วินาที - ค่าเริ่มต้นปัจจุบัน) |
+| `/function full_ghast_ahead:set {speed:250}` | OP | ตั้งความเร็ว Ghast เป็น 2.5x (9.0 บล็อก/วินาที) |
+| `/function full_ghast_ahead:set {speed:300}` | OP | ตั้งความเร็ว Ghast เป็น 3x (10.8 บล็อก/วินาที) |
+| `/function full_ghast_ahead:set {speed:400}` | OP | ตั้งความเร็ว Ghast เป็น 4x (14.4 บล็อก/วินาที - ความเร็วสูงสุด) |
+
+### 5. Fabric Carpet Commands (คำสั่งจำลองผู้เล่น & เฝ้าฟาร์ม)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/player <ชื่อบอท> spawn` | ทุกคน | เสกตัวละครบอทจำลอง (Fake Player) เพื่อเฝ้าฟาร์มหรือ AFK โหลด Chunks |
@@ -194,36 +214,27 @@ pannawat-minecraft-server/
 | `/tick warp <ticks>` | OP | เร่งเวลาล่วงหน้าเพื่อทดสอบกลไกเรดสโตนหรือฟาร์ม |
 | `/carpet <rule> <value>` | OP | ตรวจสอบหรือปรับเปลี่ยนกฎของ Carpet แบบเรียลไทม์ |
 
-### 5. Having a Blast Commands (คำสั่งควบคุมการซ่อมหลุมระเบิด - ทุกคนใช้ได้)
+### 6. WorldEdit Commands (คำสั่งสร้างพื้นที่ในโลก Creative)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
-| `/havingablast status` | ทุกคน | ดูสถานะระบบซ่อมหลุมระเบิดและจำนวนบล็อกที่กำลังรอซ่อม |
-| `/havingablast now` | ทุกคน | บังคับให้เริ่มซ่อมแซมบล็อกที่ค้างอยู่ทั้งหมดทันที |
-| `/havingablast delay <วินาที>` | ทุกคน | ปรับเวลาหน่วงก่อนเริ่มซ่อมหลุมระเบิด (เช่น `/havingablast delay 3`) |
-| `/havingablast speed <เปอร์เซ็นต์>` | ทุกคน | ปรับความเร็วในการวางบล็อกซ่อมแซม 25-400% (เช่น `/havingablast speed 100`) |
-| `/havingablast repair <ชนิด>` | ทุกคน | สลับเปิด/ปิดการซ่อมของระเบิดแต่ละชนิด (`creeper`, `tnt`, `bed`, `anchor`, `crystal`, `fireball`, `wither`) |
+| `//wand` | OP / Creative | เสกขวานไม้ WorldEdit สำหรับมาร์กจุด Pos1 (คลิกซ้าย) และ Pos2 (คลิกขวา) |
+| `//set <บล็อก>` | OP / Creative | เติมบล็อกทั้งหมดในพื้นที่ที่เลือก |
+| `//replace <บล็อกเดิม> <บล็อกใหม่>` | OP / Creative | แทนที่บล็อกที่กำหนดเฉพาะในพื้นที่ที่เลือก |
+| `//copy` / `//paste` | OP / Creative | คัดลอกและวางสิ่งก่อสร้างตามพิกัดสัมพัทธ์ |
+| `//undo` / `//redo` | OP / Creative | ย้อนกลับคำสั่งหรือทำซ้ำการเปลี่ยนแปลงล่าสุด |
 
-### 6. Datapack Utility Commands
+### 7. Diagnostics & Performance Commands (คำสั่งตรวจสอบและดูแลระบบ)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
-| `/function full_ghast_ahead:settings` | OP/ทุกคน | เปิดเมนูปรับแต่งความเร็วในการขี่ Ghast (1×, 1.5×, 2×, 2.5×, 3×) |
-
-### 7. Server Administration & Diagnostics Commands (คำสั่งดูแลเซิร์ฟเวอร์)
-| คำสั่ง | สิทธิ์ | คำอธิบาย |
-|---|---|---|
-| `/save-all flush` | OP | บังคับบันทึกข้อมูลโลกและผู้เล่นทั้งหมดลงดิสก์ทันที |
-| `/stop` | OP | เซฟโลกและปิดเซิร์ฟเวอร์อย่างปลอดภัย |
-| `/reload` | OP | รีโหลด Datapack และไฟล์คอนฟิกทั้งหมดในเกม |
-| `/seed` | OP | แสดงค่า Seed ของโลกปัจจุบัน |
+| `/spark tps` | ทุกคน | ตรวจสอบค่า TPS เฉลี่ย (1m, 5m, 15m) และค่า MSPT |
+| `/spark health` | OP | ตรวจสอบสุขภาพของเซิร์ฟเวอร์ (TPS, CPU, RAM และ GC) |
+| `/spark profiler start` / `/spark profiler stop` | OP | บันทึก Profiler วิเคราะห์และค้นหาจุดที่ทำให้เซิร์ฟเวอร์ช้า |
 | `/chunky start` | OP | เริ่มต้นการ Pre-generate Chunks ในแมพ |
-| `/chunky pause` | OP | พักการ Pre-generate ชั่วคราว |
-| `/chunky continue` | OP | ดำเนินการ Pre-generate ต่อ |
-| `/chunky cancel` | OP | ยกเลิกการ Pre-generate |
-| `/chunky progress` | OP | ตรวจสอบความคืบหน้าการ Pre-generate Chunks |
-| `/servercore status` | OP | ดูสถานะและประสิทธิภาพการปรับแต่ง Tick ของ ServerCore |
-| `/servercore reload` | OP | รีโหลดการตั้งค่าของ ServerCore |
-| `/spark health` | OP | ตรวจสอบสุขภาพของเซิร์ฟเวอร์ (TPS, CPU, Memory) |
-| `/spark profiler start` | OP | รัน Profiler วัดการใช้งานของแต่ละโมดูลอย่างละเอียด |
+| `/chunky pause` / `/chunky continue` | OP | พักหรือทำต่อการ Pre-generate Chunks |
+| `/chunky progress` / `/chunky cancel` | OP | ตรวจสอบความคืบหน้าหรือยกเลิกการโหลด Chunks |
+| `/save-all flush` | OP | บังคับบันทึกข้อมูลโลกและไฟล์ผู้เล่นทั้งหมดลงดิสก์ทันที |
+| `/reload` | OP | รีโหลด Datapack และไฟล์คอนฟิกทั้งหมดในเกมโดยไม่ต้องรีสตาร์ตเซิร์ฟเวอร์ |
+| `/seed` | OP | แสดงค่า Seed ของโลกปัจจุบัน |
 
 ### 8. Special Name Tag Features (ฟังก์ชันป้ายชื่อพิเศษ)
 ตั้งชื่อบน Name Tag ผ่านทั่ง (Anvil) แล้วนำไปแปะใส่ม็อบ:
