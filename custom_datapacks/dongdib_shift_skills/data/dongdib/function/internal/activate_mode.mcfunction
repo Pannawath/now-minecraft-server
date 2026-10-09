@@ -23,3 +23,5 @@ execute if score @s d_mode matches 6 run scoreboard players set @s veinminer.off
 # Trigger immediate one-time actions
 execute if score @s d_mode matches 2 at @s run function dongdib:skills/plant_area
 execute if score @s d_mode matches 3 at @s run function dongdib:skills/slime_radar_init
+execute if score @s d_mode matches 4 at @s run scoreboard players set @s d_mob_timer 120
+execute if score @s d_mode matches 4 at @s run function dongdib:skills/mob_radar_scan
