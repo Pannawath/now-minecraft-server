@@ -19,7 +19,7 @@ execute if score @s d_curr_sneak matches 1 if score @s d_is_sneak matches 0 run 
 scoreboard players operation @s d_is_sneak = @s d_curr_sneak
 
 # If mode is active (d_mode > 0)
-execute if score @s d_mode matches 1..6 run function dongdib:internal/active_tick
+execute if score @s d_mode matches 1..3 run function dongdib:internal/active_tick
 
 # Default timber and veinminer to disabled (1) if uninitialized
 execute unless score @s timber.off matches 0..1 run scoreboard players set @s timber.off 1

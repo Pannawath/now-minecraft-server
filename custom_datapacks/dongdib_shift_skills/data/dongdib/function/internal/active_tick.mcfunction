@@ -12,8 +12,5 @@ execute if score @s d_timer matches ..0 run function dongdib:internal/deactivate
 
 # Continuous skill behaviors while active
 execute if score @s d_mode matches 1 run function dongdib:skills/lumberjack_tick
-execute if score @s d_mode matches 2 run function dongdib:skills/plant_area_tick
-execute if score @s d_mode matches 3 run function dongdib:skills/slime_radar_tick
-execute if score @s d_mode matches 4 run function dongdib:skills/mob_radar_tick
-execute if score @s d_mode matches 5 run function dongdib:skills/utility_tracker_tick
-execute if score @s d_mode matches 6 run function dongdib:skills/veinminer_tick
+execute if score @s d_mode matches 2 run function dongdib:skills/utility_tracker_tick
+execute if score @s d_mode matches 3 run function dongdib:skills/veinminer_tick

@@ -40,13 +40,13 @@ pannawat-minecraft-server/
 │   └── tab/                       # คอนฟิกแท็บลิสต์ หัว/ท้ายกระดาน
 ├── custom_datapacks/               # ซอร์สโค้ด Datapack ที่พัฒนาขึ้นเฉพาะเซิร์ฟเวอร์
 │   ├── dongdib_creative_world/    # ระบบสลับโลก Creative (/c, /c leave) และเซฟพิกัดย้อนกลับ
-│   └── dongdib_shift_skills/      # ระบบสกิลกด Shift 6 สกิล (Lumberjack, Planter, Radars, Veinminer)
+│   └── dongdib_shift_skills/      # ระบบสกิลกด Shift (Lumberjack, Utility Tracker, Veinminer)
 ├── datapacks/                      # ชุด Datapacks (.zip) ประจำเซิร์ฟเวอร์
 │   ├── FullGhastAhead-1.0.0.zip   # ระบบขี่ Ghast และปรับความเร็ว
 │   ├── dongdib_creative_world.zip # สลับโลกสร้างสรรค์ แยกช่องเก็บของ และสิทธิ์ OP ชั่วคราว
 │   ├── dongdib_custom_drops.zip   # ดรอปไอเทมพิเศษ (Elytra, หัวมังกร, กล่อง Shulker)
 │   ├── dongdib_qol_mechanics.zip  # ระบบ QoL (หายใจในฝน, ป้ายชื่อม็อบ, นอนคนเดียว, รีเฟรชสกิน)
-│   ├── dongdib_shift_skills.zip   # สกิลกด Shift 6 โหมด (One-shot Pulse ไร้แล็ก)
+│   ├── dongdib_shift_skills.zip   # สกิลกด Shift (Lumberjack, Utility Tracker, Veinminer ไร้แล็ก)
 │   ├── profets_timber.zip         # ระบบตัดไม้ทั้งต้นพร้อมแอนิเมชัน
 │   ├── profets_veinminer.zip      # ระบบขุดแร่ทั้งสาย
 │   └── vanilla_tweaks_suite.zip   # ระบบ AFK Display และ Cauldron Concrete
@@ -100,14 +100,10 @@ pannawat-minecraft-server/
 - **สิทธิ์คำสั่งและ WorldEdit ชั่วคราว:** มอบสิทธิ์ Operator Level 2 เฉพาะขณะอยู่ในโลก Creative เพื่อให้ใช้คำสั่งสร้างและ WorldEdit ได้อย่างอิสระ และปลดสิทธิ์ออกทันทีเมื่อกลับโลกปกติ
 
 ### 2. `dongdib_shift_skills` (ระบบสกิลกด Shift ต่อเนื่อง)
-- กดย่อตัว (Shift) ติดต่อกัน 10 ครั้ง เพื่อเปิดใช้งานสกิลตามไอเทมที่ถือในมือหลักหรือมือซ้าย (Mainhand / Offhand)
-- สกิลทำงานแบบ **One-shot Pulse / Throttled** ไม่ค้างลูปหนัก เซิร์ฟเวอร์ไม่แล็ก (0% Tick Overhead):
+- กดย่อตัว (Shift) ติดต่อกัน 10 ครั้ง เพื่อเปิดใช้งานสกิลตามไอเทมที่ถือในมือหลักหรือมือซ้าย (Mainhand / Offhand):
   1. **Lumberjack (ขวานทุกระดับ):** สลับเปิด/ปิดระบบโค่นต้นไม้ทั้งต้น
-  2. **Area Farmer & Planter (จอบทุกระดับ / เมล็ดพันธุ์):** เกี่ยวผลผลิตที่โตเต็มวัย (Wheat, Carrots, Potatoes, Beetroots, Nether Wart) ในรัศมี 9x9 อัตโนมัติ ดึงผลผลิตเข้าตัวทันที (Instant Pickup) และนำเมล็ดในตัวปลูกคืนแปลง Farmland ทันทีแบบ One-shot Action
-  3. **Slime Radar (Slime Ball / Slime Block ที่ Y < 40):** สแกนหา Slime Chunk ตาม Seed เซิร์ฟเวอร์ พร้อมสร้างเสาอนุภาคสีเขียวมาร์กขอบเขต 16x16 บล็อกเป็นเวลา 15 วินาที
-  4. **Mob Spawn Radar (Torch / Soul Torch):** สแกนจุดมืด (Light Level 0 ซึ่งเป็นจุดที่มอนสเตอร์เกิดได้) ในรัศมี 13x13 ทันที 1 รอบ พร้อมจุดเปลวไฟ Flame สว่างในความมืดมาร์กจุดเสี่ยงเตือน 6 วินาทีแล้วดับเอง (One-shot Pulse ไร้แล็ก)
-  5. **Utility Tracker (เข็มทิศ / นาฬิกา):** แสดงพิกัด X Y Z และทิศทางบน Actionbar ตลอดเวลาที่ถือไอเทม
-  6. **Veinminer (พลั่ว / อีเต้อทุกระดับ):** สลับเปิด/ปิดระบบขุดแร่ทั้งสายรายบุคคล
+  2. **Utility Tracker (เข็มทิศ / นาฬิกา):** แสดงพิกัด X Y Z และทิศทางบน Actionbar ตลอดเวลาที่ถือไอเทม
+  3. **Veinminer (พลั่ว / อีเต้อทุกระดับ):** สลับเปิด/ปิดระบบขุดแร่ทั้งสายรายบุคคล
 
 ### 3. `FullGhastAhead-1.0.0` (Full Ghast Ahead)
 - ใส่ Saddle (อานม้า) ขี่ Ghast บินบนท้องฟ้าได้ โดยคลิกขวาใส่ Ghast เพื่อสวมอาน แล้วคลิกขวาเพื่อขึ้นขี่ (Spacebar เพื่อบินขึ้น, WASD เพื่อบังคับทิศทาง, Shift เพื่อลง)
