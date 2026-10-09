@@ -31,24 +31,34 @@ pannawat-minecraft-server/
 │   │   └── sitting-config.json    # ตั้งค่าการนั่ง (hand-sitting: false)
 │   ├── TabTPS/
 │   │   └── display-configs/default.conf # คอนฟิกการแสดงผล TPS/MSPT
+│   ├── dimensional-inventories/   # คอนฟิกแยกกระเป๋าและช่องเก็บของตามมิติโลก
+│   │   └── v2/config/main/dimension-pools.json
 │   ├── havingablast.json          # คอนฟิกการซ่อมแซมบล็อกระเบิดอัตโนมัติ
-│   └── image2map.json             # คอนฟิกการสร้างแผนที่รูปภาพ
-├── datapacks/                      # ชุด Datapacks ประจำเซิร์ฟเวอร์
+│   ├── image2map.json             # คอนฟิกการสร้างแผนที่รูปภาพ
+│   ├── servercore/                # คอนฟิกปรับแต่งประสิทธิภาพและ Tick
+│   ├── skinsrestorer/             # คอนฟิกจัดการสกินออฟไลน์
+│   └── tab/                       # คอนฟิกแท็บลิสต์ หัว/ท้ายกระดาน
+├── custom_datapacks/               # ซอร์สโค้ด Datapack ที่พัฒนาขึ้นเฉพาะเซิร์ฟเวอร์
+│   ├── dongdib_creative_world/    # ระบบสลับโลก Creative (/c, /c leave) และเซฟพิกัดย้อนกลับ
+│   └── dongdib_shift_skills/      # ระบบสกิลกด Shift 6 สกิล (Lumberjack, Planter, Radars, Veinminer)
+├── datapacks/                      # ชุด Datapacks (.zip) ประจำเซิร์ฟเวอร์
 │   ├── FullGhastAhead-1.0.0.zip   # ระบบขี่ Ghast และปรับความเร็ว
-│   ├── ismp_custom_drops.zip      # ดรอปไอเทมพิเศษ (Elytra, หัวมังกร, กล่อง Shulker)
-│   ├── ismp_qol_mechanics.zip     # ระบบ QoL (หายใจในฝน, ป้ายชื่อม็อบ, นอนคนเดียว)
+│   ├── dongdib_creative_world.zip # สลับโลกสร้างสรรค์ แยกช่องเก็บของ และสิทธิ์ OP ชั่วคราว
+│   ├── dongdib_custom_drops.zip   # ดรอปไอเทมพิเศษ (Elytra, หัวมังกร, กล่อง Shulker)
+│   ├── dongdib_qol_mechanics.zip  # ระบบ QoL (หายใจในฝน, ป้ายชื่อม็อบ, นอนคนเดียว, รีเฟรชสกิน)
+│   ├── dongdib_shift_skills.zip   # สกิลกด Shift 6 โหมด (One-shot Pulse ไร้แล็ก)
 │   ├── profets_timber.zip         # ระบบตัดไม้ทั้งต้นพร้อมแอนิเมชัน
-│   ├── vanilla_tweaks_suite.zip   # ระบบ AFK Display และ Cauldron Concrete
-│   └── veinminer-1.3.6.zip        # ระบบขี่ขุดแร่ทั้งสาย
+│   ├── profets_veinminer.zip      # ระบบขุดแร่ทั้งสาย
+│   └── vanilla_tweaks_suite.zip   # ระบบ AFK Display และ Cauldron Concrete
 ├── carpet.conf                     # กฎการทำงานของ Fabric Carpet
 ├── mods-list.txt                   # รายชื่อม็อดที่ติดตั้งทั้งหมดในเซิร์ฟเวอร์
-├── server.properties               # การตั้งค่าเซิร์ฟเวอร์หลัก (Seed ถาวร)
+├── server.properties               # การตั้งค่าเซิร์ฟเวอร์หลัก (Seed ถาวร, OP Level 2)
 └── README.md                       # เอกสารและคู่มือการใช้งานเซิร์ฟเวอร์
 ```
 
 ---
 
-## Mods
+## Mods (ม็อดที่ติดตั้งในระบบ)
 
 | Mod | Version | Purpose |
 |---|---|---|
@@ -61,10 +71,13 @@ pannawat-minecraft-server/
 | ServerCore | 1.5.20+26.3 | Tick optimizations, entity culling |
 | Chunky | 1.5.3 | Pre-generate chunks on demand |
 | Fabric Carpet | 26.3+v260915 | Server rules, `/tick`, `/player`, debug tools |
+| Multiworld Bundle (Fantasy) | 1.14.2 (0.8.4+26.3) | จัดการสร้างและโหลดมิติโลกเสริม (Creative World: `multiworld:creative`) |
+| Dimensional Inventories | 2.2.2+26.3 | แยกกระเป๋า ไอเทม หลอดอาหาร เลเวล ระหว่างโลก Survival และ Creative |
+| WorldEdit | 7.4.6-beta-02 | เครื่องมือปรับแต่งพื้นที่และบล็อกสำหรับโลก Creative |
 | Servux | 26.3-0.12.2 | Server-side litematica support |
 | Syncmatica | 26.3-0.3.20 | Share & sync litematica schematics |
 | TabTPS | 1.4.2 | Show TPS/MSPT/ping in tab list & action bar |
-| TAB | 6.2.0 | Tab list & player nametag management |
+| TAB | 6.2.0 | Tab list & player nametag management (ปรับแต่ง Refresh Interval ลดโหลด Tick) |
 | Drop Stacker | 1.2.1 | Automatically merge dropped items into stacks to reduce lag |
 | Fabric Language Kotlin | 1.14.1+kotlin.2.4.20 | Required Kotlin runtime for Fabric mods |
 | SkinsRestorer | 15.12.6 | Offline-mode custom skins without cooldown |
@@ -73,78 +86,87 @@ pannawat-minecraft-server/
 | Image2Map | 0.15.0+26.3 | Create custom image maps/posters via `/image2map create` |
 | No Chat Reports | 26.3-v2.21.0 | Remove chat report signatures |
 | Having a Blast | 0.2.8+26.3 | Cartoon explosions & auto-healing craters (Creeper/TNT/Wither/etc.) |
+| Spark | 1.10.187 | วิเคราะห์ประสิทธิภาพ CPU, RAM, TPS, MSPT และ Garbage Collection |
+| Command Aliases | 1.1.0+mc26.3 | สร้างทางลัดคำสั่งและแม็ปคำสั่งลัด `/c` |
 
 ---
 
 ## Datapacks
 
-### `profets_timber` (Profet's Timber)
-- ฟันโค่นต้นไม้ทั้งต้นพร้อมเอฟเฟกต์โค่นล้มแบบแอนิเมชัน ไม่ทำให้เซิร์ฟเวอร์แล็ก
-- สลับเปิด/ปิดการทำงานเฉพาะตัวผู้เล่นได้ด้วยคำสั่ง `/trigger timber`
-- ย่อตัว (Sneak) ขณะตัด เพื่อตัดเพียง 1 ท่อนตามปกติได้
+### 1. `dongdib_creative_world` (ระบบโลก Creative แยกมิติ)
+- สลับไปสร้างสิ่งก่อสร้างในโลก Creative ได้ตลอดเวลาผ่านคำสั่ง `/c`
+- **ระบบเซฟพิกัดย้อนกลับ (Safe Marker Return):** จดจำพิกัดเดิมในโลก Overworld ก่อนวาร์ป เมื่อพิมพ์ `/c leave` จะวาร์ปกลับมายังพิกัดเดิมแม่นยำ 100%
+- **ระบบแยกกระเป๋าอิสระ (Isolated Inventories):** ทำงานร่วมกับ `dimensional-inventories` เข้าโลก Creative ครั้งแรกช่องเก็บของจะโล่ง และเมื่อสลับกลับ Survival ไอเทม เลเวล หลอดเลือดจะกลับมาครบถ้วน
+- **สิทธิ์คำสั่งและ WorldEdit ชั่วคราว:** มอบสิทธิ์ Operator Level 2 เฉพาะขณะอยู่ในโลก Creative เพื่อให้ใช้คำสั่งสร้างและ WorldEdit ได้อย่างอิสระ และปลดสิทธิ์ออกทันทีเมื่อกลับโลกปกติ
 
-### `veinminer-1.3.6` / `OreVeinMiner` (Vein Miner)
-- ขุดแร่ทั้งสายพร้อมกันเมื่อ Sneak (ย่อตัว) ขณะขุด
-- รองรับ Fortune, Silk Touch และหัก Durability ตามจำนวนบล็อกจริง
-- สลับเปิด/ปิดการทำงานเฉพาะตัวผู้เล่นได้ด้วยคำสั่ง `/trigger ovm.toggle`
+### 2. `dongdib_shift_skills` (ระบบสกิลกด Shift ต่อเนื่อง)
+- กดย่อตัว (Shift) ค้างหรือกดซ้ำเพื่อสะสมเกจพลังงาน 1-9 ในการเปิดใช้งานสกิลตามไอเทมที่ถือในมือ
+- สกิลทำงานแบบ **One-shot Pulse / Throttled** ไม่ค้างลูปหนัก จึงไม่ส่งผลกระทบต่อ TPS ของเซิร์ฟเวอร์
+  1. **Lumberjack (ขวาน):** ฟันโค่นต้นไม้ทั้งต้น
+  2. **Area Planter & Harvester (จอบ / เมล็ดพันธุ์):** เก็บเกี่ยวและปลูกผลผลิตการเกษตรรอบตัวแบบ Pulse
+  3. **Slime Radar (Slime Ball / Slime Block ที่ Y < 40):** สแกนหา Slime Chunk พร้อมสร้างอนุภาคชี้พิกัด
+  4. **Mob Spawn Radar (คบเพลิง / Torch):** สแกนจุดมืดที่มีความสว่าง 0 (จุดเสี่ยงม็อบเกิด) ในรัศมี พร้อมจุดไฟมาร์กตำแหน่งเตือน 6 วินาที
+  5. **Utility Tracker (เข็มทิศ / นาฬิกา):** แสดงพิกัด XYZ เรียลไทม์บน Actionbar
+  6. **Veinminer (พลั่ว / ที่ขุด):** ขุดแร่ทั้งสาย
 
-### `FullGhastAhead-1.0.0` (Full Ghast Ahead)
-- ใส่ Saddle (อานม้า) ขี่ Ghast บินบนท้องฟ้าได้ โดยคลิกขวาใส่ Ghast เพื่อสวมอาน แล้วคลิกขวาเพื่อขึ้นขี่ (กด Spacebar เพื่อบินขึ้น, WASD เพื่อควบคุมทิศทาง, Shift เพื่อลง)
-- **การปรับความเร็วในการบิน (Flight Speed Adjustment):**
-  - **วิธีที่ 1 (ผ่านเมนูอินเตอร์แอคทีฟ):**
-    - พิมพ์คำสั่ง `/function full_ghast_ahead:settings` ในช่องแชท
-    - จะมีหน้าต่างข้อความขึ้นในช่องแชท ให้คลิกเลือกความเร็วที่ต้องการ (ตั้งแต่ 1× ถึง 3×)
-  - **วิธีที่ 2 (พิมพ์คำสั่งโดยตรง):**
-    - ความเร็วปกติ (1× / Vanilla): `/function full_ghast_ahead:set {speed:1.0}`
-    - ความเร็ว 1.5×: `/function full_ghast_ahead:set {speed:1.5}`
-    - ความเร็ว 2.0×: `/function full_ghast_ahead:set {speed:2.0}`
-    - ความเร็ว 2.5×: `/function full_ghast_ahead:set {speed:2.5}`
-    - ความเร็ว 3.0×: `/function full_ghast_ahead:set {speed:3.0}`
+### 3. `FullGhastAhead-1.0.0` (Full Ghast Ahead)
+- ใส่ Saddle (อานม้า) ขี่ Ghast บินบนท้องฟ้าได้ โดยคลิกขวาใส่ Ghast เพื่อสวมอาน แล้วคลิกขวาเพื่อขึ้นขี่ (Spacebar เพื่อบินขึ้น, WASD เพื่อบังคับทิศทาง, Shift เพื่อลง)
+- ปรับความเร็วในการบินได้ผ่านคำสั่ง `/function full_ghast_ahead:settings` หรือกำหนดตัวเลขตรง เช่น `/function full_ghast_ahead:set {speed:2.0}`
 
-### `ismp_custom_drops`
+### 4. `dongdib_custom_drops`
 - Ender Dragon ดรอป Elytra + Dragon Head ทุกครั้งที่ตาย
 - Shulker ดรอป 2 Shells เสมอ + โอกาส 25% ดรอป Shulker Box ทั้งกล่อง
 - ผู้เล่นดรอป Player Head เมื่อตาย
 
-### `ismp_qol_mechanics`
+### 5. `dongdib_qol_mechanics`
 - **One Player Sleep:** นอนข้ามคืนได้เพียงคนเดียว (`playersSleepingPercentage 1`)
 - สัตว์น้ำหายใจในสายฝนได้เมื่อขึ้นมาบนบก
 - ปลาไม่ว่ายหนีเมื่อผู้เล่นย่อตัว (Sneak)
 - คลิกขวาแปลง Farmland ด้วยพลั่ว/ที่ขุดเพื่อเปลี่ยนกลับเป็นดิน
 - เรือปีนบล็อกพิเศษ (Dirt Path, Soul Sand, Snow Layer)
 - สั่งการป้ายชื่อม็อบ: `_show`, `_clear`, `_baby`, `_silent`
-- **Skin Persistence on Rejoin:** ตรวจจับการเข้าเซิร์ฟเวอร์ใหม่และสั่งรีเฟรชสกินอัตโนมัติภายใน 2 วินาที ป้องกันปัญหาสกินหายหรือรีเซ็ตบนไคลเอนต์หลังเข้าออกใหม่
+- **Skin Persistence on Rejoin:** ตรวจจับการเข้าเซิร์ฟเวอร์ใหม่และสั่งรีเฟรชสกินอัตโนมัติภายใน 2 วินาที ป้องกันปัญหาสกินหาย
 
-### `vanilla_tweaks_suite`
+### 6. `profets_timber` & `profets_veinminer`
+- โค่นต้นไม้และขุดแร่ทั้งสายแบบแอนิเมชัน สามารถเปิด/ปิดเฉพาะตัวผู้เล่นได้ด้วย `/trigger timber` และ `/trigger veinminer`
+
+### 7. `vanilla_tweaks_suite`
 - **AFK Display:** แสดงสถานะ [AFK] บนหัวผู้เล่นเมื่อไม่ได้ขยับตัว
-- **Cauldron Concrete:** โยนบล็อก Concrete Powder ลงหม้อต้มน้ำ (Water Cauldron) ระดับน้ำเต็ม จะเปลี่ยนเป็น Concrete ทันที
+- **Cauldron Concrete:** โยนผง Concrete Powder ลงหม้อต้มน้ำระดับน้ำเต็ม เปลี่ยนเป็นบล็อก Concrete ทันที
 
 ---
 
 ## Carpet Rules
 
-Configured in `world/carpet.conf`:
+ตั้งค่าไว้ใน `world/carpet.conf`:
 
 | Rule | Value | Effect |
 |---|---|---|
 | stackableShulkerBoxes | 64 | วางซ้อนกล่อง Shulker Box ในช่องเก็บของได้สูงสุด 64 ชิ้น |
-| ctrlQCrafting | true | กด Ctrl+Q ในหน้าคราฟต์เพื่อดรอปไอเทมทั้ง Stack ทันที |
 | flippinCactus | true | ใช้ต้นกระบองเพชรหมุนทิศทางบล็อกได้ |
 | renewableSponges | true | ฟองน้ำเกิดใหม่ได้จากการกำจัด Elder Guardian |
 | commandPlayer | true | เปิดใช้งานคำสั่ง `/player` สำหรับเสกบอทจำลอง |
 | commandTick | true | เปิดใช้งานคำสั่ง `/tick` สำหรับเร่ง/หยุดเวลาเกม |
 | commandLog | true | เปิดใช้งานคำสั่ง `/log` สำหรับมอนิเตอร์อีเวนต์ |
+| huskSpawningInTemples | true | ให้ Husk เกิดใน Desert Temple ได้ |
+| missingTools | true | อนุญาตให้สลับเครื่องมือขุดเจาะที่เหมาะสมได้เร็วขึ้น |
 
 ---
 
 ## Server Commands (คำสั่งทั้งหมดที่ใช้งานได้ในเซิร์ฟเวอร์)
 
-### 1. General & QoL Commands (คำสั่งทั่วไปและระบบผู้เล่น)
+### 1. Creative World & Dimension Commands (ระบบโลกสร้างสรรค์)
+| คำสั่ง | สิทธิ์ | คำอธิบาย |
+|---|---|---|
+| `/c` | ทุกคน | วาร์ปเข้าสู่โลก Creative กลางเวหา, บันทึกพิกัดเดิม, สลับกระเป๋าเป็นของโลก Creative และรับสิทธิ์ใช้ WorldEdit ชั่วคราว |
+| `/c leave` | ทุกคน | วาร์ปกลับสู่โลก Survival ณ พิกัดเดิมก่อนวาร์ป พร้อมคืนกระเป๋า ไอเทม เลเวลเดิม และถอนสิทธิ์พิเศษออก |
+
+### 2. General & QoL Commands (คำสั่งทั่วไปและระบบผู้เล่น)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/sit` | ทุกคน | นั่งลงบนบล็อกหรือพื้นตรงจุดที่มอง/ยืนอยู่ทันที (ลุกขึ้นด้วยการกด Shift) |
 | `/trigger timber` | ทุกคน | สลับเปิด/ปิดระบบตัดไม้โค่นทั้งต้นสำหรับตนเอง |
-| `/trigger ovm.toggle` | ทุกคน | สลับเปิด/ปิดระบบขุดแร่ทั้งสายสำหรับตนเอง (1 = เปิด, 2 = ปิด) |
+| `/trigger veinminer` | ทุกคน | สลับเปิด/ปิดระบบขุดแร่ทั้งสายสำหรับตนเอง |
 | `/image2map create none <URL>` | ทุกคน | สร้างแผนที่รูปภาพขนาด 1x1 จากลิงก์รูปภาพอินเทอร์เน็ต |
 | `/image2map create <กว้าง> <สูง> none <URL>` | ทุกคน | สร้างแผนที่โปสเตอร์ขนาดใหญ่หลายแผ่น เช่น `/image2map create 2 2 none <URL>` |
 | `/tabtps` | ทุกคน | แสดงค่า TPS, MSPT, CPU และ Memory ปัจจุบันของเซิร์ฟเวอร์ |
@@ -152,7 +174,7 @@ Configured in `world/carpet.conf`:
 | `/tabtps toggle bossbar` | ทุกคน | เปิด/ปิดการแสดงผล TPS บน Boss Bar ด้านบนจอ |
 | `/syncmatica` | ทุกคน | จัดการและแชร์แบบแปลน Litematica บนเซิร์ฟเวอร์ร่วมกับผู้เล่นคนอื่น |
 
-### 2. SkinsRestorer Commands (คำสั่งจัดการสกิน - คูลดาวน์ 0 วินาที)
+### 3. SkinsRestorer Commands (คำสั่งจัดการสกิน - คูลดาวน์ 0 วินาที)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/skin <ชื่อผู้เล่น>` | ทุกคน | เปลี่ยนสกินตามชื่อผู้เล่นคนนั้น (ดึงสกินจาก Mojang อัตโนมัติ) |
@@ -162,7 +184,7 @@ Configured in `world/carpet.conf`:
 | `/skins` | ทุกคน | เปิดหน้าต่างเมนู GUI เลือกสกิน |
 | `/sr reload` | OP | รีโหลดการตั้งค่าของ SkinsRestorer |
 
-### 3. Fabric Carpet Commands (คำสั่งจำลองผู้เล่น & เฝ้าฟาร์ม)
+### 4. Fabric Carpet Commands (คำสั่งจำลองผู้เล่น & เฝ้าฟาร์ม)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/player <ชื่อบอท> spawn` | ทุกคน | เสกตัวละครบอทจำลอง (Fake Player) เพื่อเฝ้าฟาร์มหรือ AFK โหลด Chunks |
@@ -176,7 +198,7 @@ Configured in `world/carpet.conf`:
 | `/tick warp <ticks>` | OP | เร่งเวลาล่วงหน้าเพื่อทดสอบกลไกเรดสโตนหรือฟาร์ม |
 | `/carpet <rule> <value>` | OP | ตรวจสอบหรือปรับเปลี่ยนกฎของ Carpet แบบเรียลไทม์ |
 
-### 4. Having a Blast Commands (คำสั่งควบคุมการซ่อมหลุมระเบิด - ทุกคนใช้ได้)
+### 5. Having a Blast Commands (คำสั่งควบคุมการซ่อมหลุมระเบิด - ทุกคนใช้ได้)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/havingablast status` | ทุกคน | ดูสถานะระบบซ่อมหลุมระเบิดและจำนวนบล็อกที่กำลังรอซ่อม |
@@ -185,35 +207,29 @@ Configured in `world/carpet.conf`:
 | `/havingablast speed <เปอร์เซ็นต์>` | ทุกคน | ปรับความเร็วในการวางบล็อกซ่อมแซม 25-400% (เช่น `/havingablast speed 100`) |
 | `/havingablast repair <ชนิด>` | ทุกคน | สลับเปิด/ปิดการซ่อมของระเบิดแต่ละชนิด (`creeper`, `tnt`, `bed`, `anchor`, `crystal`, `fireball`, `wither`) |
 
-### 5. Datapack Utility & Fun Commands (คำสั่งฟังก์ชันพิเศษ)
+### 6. Datapack Utility Commands
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/function full_ghast_ahead:settings` | OP/ทุกคน | เปิดเมนูปรับแต่งความเร็วในการขี่ Ghast (1×, 1.5×, 2×, 2.5×, 3×) |
-| `/function veinminer:_config` | OP | เปิดเมนูการตั้งค่าบล็อกและเครื่องมือของ Veinminer |
-| `/function veinminer:_enable` | OP | เปิดการทำงานของ Veinminer |
-| `/function veinminer:_disable` | OP | ปิดการทำงานของ Veinminer |
 
-### 6. Server Administration & Optimization Commands (คำสั่งดูแลเซิร์ฟเวอร์)
+### 7. Server Administration & Diagnostics Commands (คำสั่งดูแลเซิร์ฟเวอร์)
 | คำสั่ง | สิทธิ์ | คำอธิบาย |
 |---|---|---|
 | `/save-all flush` | OP | บังคับบันทึกข้อมูลโลกและผู้เล่นทั้งหมดลงดิสก์ทันที |
 | `/stop` | OP | เซฟโลกและปิดเซิร์ฟเวอร์อย่างปลอดภัย |
 | `/reload` | OP | รีโหลด Datapack และไฟล์คอนฟิกทั้งหมดในเกม |
 | `/seed` | OP | แสดงค่า Seed ของโลกปัจจุบัน |
-| `/gamerule playersSleepingPercentage 1` | OP | ตั้งค่าให้นอนคนเดียวข้ามคืนได้ |
 | `/chunky start` | OP | เริ่มต้นการ Pre-generate Chunks ในแมพ |
 | `/chunky pause` | OP | พักการ Pre-generate ชั่วคราว |
 | `/chunky continue` | OP | ดำเนินการ Pre-generate ต่อ |
 | `/chunky cancel` | OP | ยกเลิกการ Pre-generate |
 | `/chunky progress` | OP | ตรวจสอบความคืบหน้าการ Pre-generate Chunks |
-| `/chunky radius <รัศมีบล็อก>` | OP | กำหนดรัศมีพื้นที่ Chunks ที่ต้องการเจน (เช่น `/chunky radius 2000`) |
-| `/chunky shape <circle/square>` | OP | กำหนดรูปทรงพื้นที่ที่ต้องการเจน |
 | `/servercore status` | OP | ดูสถานะและประสิทธิภาพการปรับแต่ง Tick ของ ServerCore |
 | `/servercore reload` | OP | รีโหลดการตั้งค่าของ ServerCore |
-| `/tab cpu` | OP | ตรวจสอบปริมาณการใช้งาน CPU ของเซิร์ฟเวอร์ |
-| `/tab reload` | OP | รีโหลดการตั้งค่าของ TAB |
+| `/spark health` | OP | ตรวจสอบสุขภาพของเซิร์ฟเวอร์ (TPS, CPU, Memory) |
+| `/spark profiler start` | OP | รัน Profiler วัดการใช้งานของแต่ละโมดูลอย่างละเอียด |
 
-### 7. Special Name Tag Features (ฟังก์ชันป้ายชื่อพิเศษ)
+### 8. Special Name Tag Features (ฟังก์ชันป้ายชื่อพิเศษ)
 ตั้งชื่อบน Name Tag ผ่านทั่ง (Anvil) แล้วนำไปแปะใส่ม็อบ:
 - `_show` : แสดงป้ายชื่อม็อบตลอดเวลา (CustomNameVisible: true)
 - `_clear` : ซ่อนป้ายชื่อม็อบออก
@@ -222,9 +238,16 @@ Configured in `world/carpet.conf`:
 
 ---
 
+## Performance & Optimization Guidelines (แนวทางการปรับแต่งลดอาการแล็ก)
+- **Tick Performance:** ปรับแต่ง TAB Placeholder Refresh Interval เป็น 1000ms เพื่อป้องกัน packet spam และถอด placeholder ที่กินโหลดเธรดหลักออก
+- **SkinsRestorer:** ปิด `dismountPlayerOnSkinUpdate` และ `remountPlayerOnSkinUpdate` ป้องกันปัญหาผู้เล่นติด loop force-sending blocks
+- **Shift Skills:** ออกแบบลูปตรวจจับแบบ Edge Detection ร่วมกับ One-shot Pulse ลดการวน selector `@e` ทุก tick ช่วยรักษาค่า MSPT อยู่ที่ ~10.5ms (20 TPS นิ่ง)
+
+---
+
 ## Backup
 
-Previous PaperMC server files are archived in [Minecraft-see-backups-](https://github.com/Pannawath/Minecraft-see-backups-) under `minecarft-paper-backup-20261007/`.
+Previous PaperMC server files are archived in [Minecraft-see-backups-](https://github.com/Pannawat-h/Minecraft-see-backups-) under `minecarft-paper-backup-20261007/`.
 
 ---
 
