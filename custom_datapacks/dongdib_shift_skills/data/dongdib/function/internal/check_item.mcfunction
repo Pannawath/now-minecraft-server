@@ -17,7 +17,9 @@ execute if items entity @s weapon.offhand #minecraft:axes run scoreboard players
 execute if items entity @s weapon.mainhand #minecraft:pickaxes run scoreboard players set @s d_temp 6
 execute if items entity @s weapon.offhand #minecraft:pickaxes run scoreboard players set @s d_temp 6
 
-# 2. Seeds (Area Planter)
+# 2. Seeds & Hoes (Area Farmer / Planter & Harvester)
+execute if items entity @s weapon.mainhand #minecraft:hoes run scoreboard players set @s d_temp 2
+execute if items entity @s weapon.offhand #minecraft:hoes run scoreboard players set @s d_temp 2
 execute if items entity @s weapon.mainhand minecraft:wheat_seeds run scoreboard players set @s d_temp 2
 execute if items entity @s weapon.offhand minecraft:wheat_seeds run scoreboard players set @s d_temp 2
 execute if items entity @s weapon.mainhand minecraft:carrot run scoreboard players set @s d_temp 2

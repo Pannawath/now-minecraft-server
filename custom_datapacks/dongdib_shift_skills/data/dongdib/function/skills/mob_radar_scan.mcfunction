@@ -1,407 +1,812 @@
 # Mob radar scan: check area around player for block light 0
-# Spawns red dust particles
-execute at @s positioned ~-8 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-8 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-6 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-4 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~-2 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~ ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~2 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~4 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~6 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~-8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~-6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~ unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~6 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~-1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~ ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~1 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~2 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
-execute at @s positioned ~8 ~3 ~8 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:1.2f} ~ ~0.1 ~ 0 0 0 0 1
+# Spawns flame and red dust particles at spawnable spots
+execute at @s positioned ~-4 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-4 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-3 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-2 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~-1 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~0 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~1 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~2 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~3 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~-1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~0 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~1 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~2 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~3 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~-1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~0 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~1 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle flame ~ ~0.15 ~ 0 0 0 0 1 force
+execute at @s positioned ~4 ~2 ~4 unless block ~ ~-1 ~ #minecraft:air if block ~ ~ ~ minecraft:air if predicate dongdib:light_zero run particle dust{color:[1.0f,0.0f,0.0f],scale:2.0f} ~ ~0.2 ~ 0 0 0 0 1 force
