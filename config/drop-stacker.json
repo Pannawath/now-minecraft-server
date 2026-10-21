@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "mergeOnSpawn": true,
+  "maxStackSize": 1000,
+  "radius": 5.0,
+  "verticalRadius": 2.0,
+  "scanInterval": 5,
+  "maxScanInterval": 100,
+  "maxMergePerPass": 64,
+  "ageInheritance": "YOUNGEST",
+  "labelMode": "ALWAYS",
+  "showDespawnTimer": true,
+  "countLowThreshold": 64,
+  "countHighThreshold": 500,
+  "hideSingleItemLabel": false,
+  "despawnTicks": 6000,
+  "blacklist": [],
+  "whitelist": [],
+  "overrides": {}
+}
