@@ -1,16 +1,17 @@
 1: Fabric API
-2: Lithium
-3: C2ME
-4: FerriteCore
-5: Krypton
-6: Alternate Current
-7: ServerCore
-8: VMP (Versatile Multithreaded Processing)
-9: zFastNoise
-10: zConfig
-11: Drop Stacker
-12: Fabric Carpet
-13: Spark
-14: Chunky
-15: SkinsRestorer
-16: Plasmo Voice (Fabric 1.21.4)
+2: Fabric Language Kotlin
+3: Lithium
+4: C2ME
+5: FerriteCore
+6: Krypton
+7: Alternate Current
+8: ServerCore
+9: VMP (Versatile Multithreaded Processing)
+10: zFastNoise
+11: zConfig
+12: Drop Stacker
+13: Fabric Carpet
+14: Spark
+15: Chunky
+16: SkinsRestorer
+17: Plasmo Voice (Fabric 26.3)
