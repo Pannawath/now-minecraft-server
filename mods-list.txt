@@ -15,4 +15,4 @@
 15: Chunky
 16: SkinsRestorer
 17: Plasmo Voice (Fabric 26.3)
-18: AntiXray (Fabric 26.3)
+18: ViperAntiXray (Fabric 26.3)
