@@ -16,3 +16,5 @@
 16: SkinsRestorer
 17: Plasmo Voice (Fabric 26.3)
 18: ViperAntiXray (Fabric 26.3)
+19: Geyser (Fabric 26.3 - Bedrock Crossplay)
+20: Floodgate (Fabric 26.3 - Bedrock Auth Bypass)
