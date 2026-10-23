@@ -18,3 +18,4 @@
 18: ViperAntiXray (Fabric 26.3)
 19: Geyser (Fabric 26.3 - Bedrock Crossplay)
 20: Floodgate (Fabric 26.3 - Bedrock Auth Bypass)
+21: LuckPerms (Fabric 26.3 - Permission Manager)
