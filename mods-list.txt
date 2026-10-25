@@ -1,21 +1,24 @@
-1: Fabric API
-2: Fabric Language Kotlin
-3: Lithium
-4: C2ME
-5: FerriteCore
-6: Krypton
-7: Alternate Current
-8: ServerCore
-9: VMP (Versatile Multithreaded Processing)
-10: zFastNoise
-11: zConfig
-12: Drop Stacker
-13: Fabric Carpet
-14: Spark
-15: Chunky
-16: SkinsRestorer
-17: Plasmo Voice (Fabric 26.3)
-18: ViperAntiXray (Fabric 26.3)
-19: Geyser (Fabric 26.3 - Bedrock Crossplay)
-20: Floodgate (Fabric 26.3 - Bedrock Auth Bypass)
-21: LuckPerms (Fabric 26.3 - Permission Manager)
+Floodgate-Fabric-2.2.7-b69.jar
+Geyser-Fabric-2.12.0-b1268.jar
+LuckPerms-Fabric-5.5.85.jar
+ViperAntiXray-26.3.jar
+alternate-current.jar
+bluemap-5.29-fabric.jar
+c2me.jar
+carpet.jar
+chunky.jar
+drop-stacker.jar
+fabric-api.jar
+fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar
+ferritecore.jar
+krypton.jar
+lithium.jar
+luckperms
+plasmovoice-fabric-26.3-2.2.0-beta.2.jar
+questui-telemetry-1.0.0.jar
+servercore.jar
+skinsrestorer.jar
+spark-1.10.187-fabric.jar
+vmp-fabric-mc26.3.jar
+zconfig-1.0.0+26.x.jar
+zfastnoise-1.1.1+26.3.jar.disabled

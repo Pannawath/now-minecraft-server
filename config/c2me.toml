@@ -186,7 +186,7 @@ globalExecutorParallelism = "default"
 	#  This will cause errored chunk to be regenerated entirely, which may cause data loss 
 	#  Only applies when async chunk loading is enabled
 	# 
-	recoverFromErrors = "default"
+	recoverFromErrors = true
 	# ================================================================
 	# (Default: true) Whether to turn fluid postprocessing into scheduled tick
 	# 
