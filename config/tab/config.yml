@@ -1,0 +1,78 @@
+header-footer:
+  enabled: true
+  designs:
+    default:
+      header: []
+      footer:
+      - ''
+      - '&7TPS: &a%tps% &8| &7MSPT: &e%mspt%ms &8| &7Ping: &b%ping%ms'
+      - '&7Server RAM: &d%memory-used-gb%GB&8/&7%memory-max-gb%GB &8| &7Online: &f%online%&8/&7%max_players%'
+      - ''
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: false
+playerlist-objective:
+  enabled: true
+  value: '%health%'
+  fancy-value: '&c%health%❤ &8| &a%ping%ms'
+  title: Health
+  render-type: INTEGER
+  disable-condition: '%world%=disabledworld'
+belowname-objective:
+  enabled: false
+  fancy-value-default: NPC
+  fancy-value: '&c%health%'
+prevent-spectator-effect:
+  enabled: false
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+  '%tps%':
+    '20': '&a20'
+conditions:
+  nick:
+    conditions:
+    - '%player%=%customname%'
+    true: '%player%'
+    false: '%customname%'
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- Owner
+- Admin
+- Mod
+- Helper
+- default
+debug: false
+mysql:
+  enabled: false
+use-online-uuid-in-tablist: true
+compensate-for-packetevents-bug: false
+placeholders:
+  register-tab-expansion: false
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+global-playerlist:
+  update-latency: false
+  enabled: false
+config-version: 7
+bossbar:
+  enabled: false
+layout:
+  enabled: false
+per-world-playerlist:
+  enabled: false
+ping-spoof:
+  enabled: false
+scoreboard:
+  enabled: false
+proxy-support:
+  enabled: false
+permission-refresh-interval: 1000
