@@ -22,6 +22,7 @@ questui-telemetry-1.0.0.jar
 servercore.jar
 skinsrestorer.jar
 spark-1.10.187-fabric.jar
+vanish-1.6.16+26.3.jar
 vmp-fabric-mc26.3.jar
 zconfig-1.0.0+26.x.jar
 zfastnoise-1.1.1+26.3.jar.disabled
