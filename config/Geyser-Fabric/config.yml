@@ -29,7 +29,7 @@ bedrock:
   # "nethernet": the new connection method for Bedrock Edition. It needs signaling, see "signaling" below.
   # "both": accepts NetherNet and RakNet. Each needs its own UDP port, see "port" and "webrtc-port".
   # "raknet": the old connection method. Bedrock Edition will stop supporting it in a future version.
-  transport: both
+  transport: raknet
 
   # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock.
   # This option makes the Bedrock port the same as the Java port every time you start the server.
