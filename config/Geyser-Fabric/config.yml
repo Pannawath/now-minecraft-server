@@ -56,7 +56,7 @@ bedrock:
 
     # Finds this server's public address through STUN when "advertise-addresses" is empty.
     # Built-in signaling asks public STUN servers, and the external signaling service asks its own.
-    stun-discovery: false
+    stun-discovery: true
 
     # Settings for built-in signaling. Only used in the "builtin" and "hybrid" modes.
     builtin:
@@ -87,7 +87,7 @@ bedrock:
 java:
   # What type of authentication Bedrock players will be checked against when logging into the Java server.
   # Can be "floodgate" (see https://wiki.geysermc.org/floodgate/), "online", or "offline".
-  auth-type: online
+  auth-type: floodgate
 
 # MOTD settings
 motd:
@@ -306,17 +306,17 @@ advanced:
     # assistance - and use UDP instead of TCP.
     # Disabling Bedrock authentication for other use-cases is NOT SUPPORTED, as it allows anyone to spoof usernames, and is therefore a security risk.
     # All Floodgate functionality (including skin uploading and account linking) will also not work when this option is disabled.
-    validate-bedrock-login: true
+    validate-bedrock-login: false
 
     # Whether to log NetherNet's debug messages, from libdatachannel and NetherNet itself, such as what signaling
     # and STUN discovery do. Useful when players cannot connect over NetherNet.
-    nethernet-debug: false
+    nethernet-debug: true
 
   # Advanced options for the external signaling service. Only used in the "nxs" and "hybrid" signaling modes.
   nxs:
     # Lets the signaling service help players connect when they cannot reach this server directly,
     # for example when the server is behind a NAT without port forwarding.
-    assisted-joins: false
+    assisted-joins: true
 
     # Lets the signaling service check from several regions that players can reach this server,
     # and stop offering addresses that fail.
