@@ -44,7 +44,7 @@ bedrock:
     # uses the same port (for example with "clone-remote-port"). In that case, Geyser automatically falls back to "nxs".
     # "nxs": Geyser registers this server with the external signaling service configured in "nxs.endpoint" below.
     # "hybrid": uses "builtin" and "nxs" at the same time.
-    mode: nxs
+    mode: hybrid
 
     # The addresses sent to connecting players for the NetherNet WebRTC connection, by both built-in and external signaling,
     # e.g. play.example.com, 198.51.100.1 or [2001:db8::1]:19133. If no port is given, the NetherNet UDP port is used.
