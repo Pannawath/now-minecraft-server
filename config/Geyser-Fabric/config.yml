@@ -318,7 +318,7 @@ advanced:
   nxs:
     # Lets the signaling service help players connect when they cannot reach this server directly,
     # for example when the server is behind a NAT without port forwarding.
-    assisted-joins: false
+    assisted-joins: true
 
     # Lets the signaling service check from several regions that players can reach this server,
     # and stop offering addresses that fail.
