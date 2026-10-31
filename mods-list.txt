@@ -1,5 +1,5 @@
 Floodgate-Fabric-2.2.7-b69.jar
-Geyser-Fabric-2.12.1-b1278.jar
+Geyser-Fabric-2.12.1-b1279.jar
 LuckPerms-Fabric-5.5.85.jar
 TAB-v6.2.1.jar
 ViperAntiXray-26.3.jar
