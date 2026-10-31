@@ -54,7 +54,7 @@ bedrock:
     # to this machine. You need to set up the port forwarding yourself.
     # Leave empty to use this machine's own addresses, plus the public address found with "stun-discovery".
     advertise-addresses:
-      - 147.185.221.216:52241
+      - 147.185.221.217:53519
 
     # Finds this server's public address through STUN when "advertise-addresses" is empty.
     # Built-in signaling asks public STUN servers, and the external signaling service asks its own.
@@ -80,7 +80,7 @@ bedrock:
     # Settings for the external signaling service. Only used in the "nxs" and "hybrid" modes, or when built-in signaling cannot run.
     nxs:
       # Access token for the signaling service, or file:/path/to/token to read it from a file. Leave empty to register without an account.
-      token: 'pnx1.5026648.qLIXeRPrkHlgGtWlhYUG03EABCVrrPEoB2C78cWlDI8'
+      token: 'pnx1.5029080.oBP9Qy7mrIJkFstcnBhKeDAkJStr3hKFYQy3ZTbGXYo'
 
       # Address of the external signaling service (NXS).
       endpoint: https://nethernet.playit.gg
@@ -312,7 +312,7 @@ advanced:
 
     # Whether to log NetherNet's debug messages, from libdatachannel and NetherNet itself, such as what signaling
     # and STUN discovery do. Useful when players cannot connect over NetherNet.
-    nethernet-debug: false
+    nethernet-debug: true
 
   # Advanced options for the external signaling service. Only used in the "nxs" and "hybrid" signaling modes.
   nxs:
