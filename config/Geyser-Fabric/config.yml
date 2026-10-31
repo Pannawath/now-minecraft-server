@@ -45,7 +45,7 @@ bedrock:
     # uses the same port (for example with "clone-remote-port"). In that case, Geyser automatically falls back to "nxs".
     # "nxs": Geyser registers this server with the external signaling service configured in "nxs.endpoint" below.
     # "hybrid": uses "builtin" and "nxs" at the same time.
-    mode: nxs
+    mode: builtin
 
     # The addresses sent to connecting players for the NetherNet WebRTC connection, by both built-in and external signaling,
     # e.g. play.example.com, 198.51.100.1 or [2001:db8::1]:19133. If no port is given, the NetherNet UDP port is used.
@@ -53,12 +53,11 @@ bedrock:
     # You can list an address this machine does not have, such as your public IP, if your router forwards that port
     # to this machine. You need to set up the port forwarding yourself.
     # Leave empty to use this machine's own addresses, plus the public address found with "stun-discovery".
-    advertise-addresses:
-      - 147.185.221.217:53519
+    advertise-addresses: []
 
     # Finds this server's public address through STUN when "advertise-addresses" is empty.
     # Built-in signaling asks public STUN servers, and the external signaling service asks its own.
-    stun-discovery: false
+    stun-discovery: true
 
     # Settings for built-in signaling. Only used in the "builtin" and "hybrid" modes.
     builtin:
@@ -80,16 +79,16 @@ bedrock:
     # Settings for the external signaling service. Only used in the "nxs" and "hybrid" modes, or when built-in signaling cannot run.
     nxs:
       # Access token for the signaling service, or file:/path/to/token to read it from a file. Leave empty to register without an account.
-      token: 'pnx1.5029080.oBP9Qy7mrIJkFstcnBhKeDAkJStr3hKFYQy3ZTbGXYo'
+      token: ''
 
       # Address of the external signaling service (NXS).
-      endpoint: https://nethernet.playit.gg
+      endpoint: https://agent.warden.cloud
 
 # Network settings for the Java server connection
 java:
   # What type of authentication Bedrock players will be checked against when logging into the Java server.
   # Can be "floodgate" (see https://wiki.geysermc.org/floodgate/), "online", or "offline".
-  auth-type: floodgate
+  auth-type: online
 
 # MOTD settings
 motd:
@@ -312,13 +311,13 @@ advanced:
 
     # Whether to log NetherNet's debug messages, from libdatachannel and NetherNet itself, such as what signaling
     # and STUN discovery do. Useful when players cannot connect over NetherNet.
-    nethernet-debug: true
+    nethernet-debug: false
 
   # Advanced options for the external signaling service. Only used in the "nxs" and "hybrid" signaling modes.
   nxs:
     # Lets the signaling service help players connect when they cannot reach this server directly,
     # for example when the server is behind a NAT without port forwarding.
-    assisted-joins: true
+    assisted-joins: false
 
     # Lets the signaling service check from several regions that players can reach this server,
     # and stop offering addresses that fail.
@@ -340,7 +339,7 @@ advanced:
 enable-metrics: true
 
 # The bstats metrics uuid. Do not touch!
-metrics-uuid: 21d5f82b-d0e0-47a2-9137-d843fe7604c4
+metrics-uuid: 6b184179-de33-43c0-9977-3b328e9dbd25
 
 # If debug messages should be sent through console
 debug-mode: false
