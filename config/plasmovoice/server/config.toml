@@ -21,15 +21,15 @@ check_for_updates = true
 ip = "0.0.0.0"
 # UDP port for the voice server
 # 0 = same port as Minecraft server
-port = 0
+port = 24454
 
 # Public IP and port that clients will connect to
 # If ip set to 0.0.0.0, ip from [host] will be used
 # If port set to 0, port from [host] will be used
 # Ignored when using BungeeCord/Velocity (proxy manages public address instead)
 [host.public]
-ip = "147.185.221.215"
-port = 17175
+ip = "147.185.221.216"
+port = 52269
 
 [voice]
 # The maximum amount, in blocks, to broadcast audio packets past the audible proximity distance.

@@ -24,13 +24,13 @@ bedrock:
   # The UDP port used for NetherNet connections. When set to 0, Geyser uses the "port" value set above.
   # Players connect to it directly, so forward it when behind a router. With "nxs" signaling and
   # assisted-joins off, they cannot connect otherwise.
-  webrtc-port: 19133
+  webrtc-port: 0
 
   # How Bedrock players can connect. Changes require a restart.
   # "nethernet": the new connection method for Bedrock Edition. It needs signaling, see "signaling" below.
   # "both": accepts NetherNet and RakNet. Each needs its own UDP port, see "port" and "webrtc-port".
   # "raknet": the old connection method. Bedrock Edition will stop supporting it in a future version.
-  transport: raknet
+  transport: nethernet
 
   # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock.
   # This option makes the Bedrock port the same as the Java port every time you start the server.
@@ -45,7 +45,7 @@ bedrock:
     # uses the same port (for example with "clone-remote-port"). In that case, Geyser automatically falls back to "nxs".
     # "nxs": Geyser registers this server with the external signaling service configured in "nxs.endpoint" below.
     # "hybrid": uses "builtin" and "nxs" at the same time.
-    mode: builtin
+    mode: nxs
 
     # The addresses sent to connecting players for the NetherNet WebRTC connection, by both built-in and external signaling,
     # e.g. play.example.com, 198.51.100.1 or [2001:db8::1]:19133. If no port is given, the NetherNet UDP port is used.
@@ -53,11 +53,12 @@ bedrock:
     # You can list an address this machine does not have, such as your public IP, if your router forwards that port
     # to this machine. You need to set up the port forwarding yourself.
     # Leave empty to use this machine's own addresses, plus the public address found with "stun-discovery".
-    advertise-addresses: []
+    advertise-addresses:
+      - 147.185.221.216:52241
 
     # Finds this server's public address through STUN when "advertise-addresses" is empty.
     # Built-in signaling asks public STUN servers, and the external signaling service asks its own.
-    stun-discovery: true
+    stun-discovery: false
 
     # Settings for built-in signaling. Only used in the "builtin" and "hybrid" modes.
     builtin:
@@ -79,10 +80,10 @@ bedrock:
     # Settings for the external signaling service. Only used in the "nxs" and "hybrid" modes, or when built-in signaling cannot run.
     nxs:
       # Access token for the signaling service, or file:/path/to/token to read it from a file. Leave empty to register without an account.
-      token: ''
+      token: 'pnx1.5026648.qLIXeRPrkHlgGtWlhYUG03EABCVrrPEoB2C78cWlDI8'
 
       # Address of the external signaling service (NXS).
-      endpoint: https://agent.warden.cloud
+      endpoint: https://nethernet.playit.gg
 
 # Network settings for the Java server connection
 java:
