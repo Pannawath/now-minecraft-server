@@ -6,7 +6,7 @@ header-footer:
       footer:
       - ''
       - '&7TPS: &a%tps% &8| &7MSPT: &e%mspt%ms &8| &7Ping: &b%ping%ms'
-      - '&7Server RAM: &d%memory-used-gb%GB&8/&7%memory-max-gb%GB &8| &7Online: &f%online%&8/&7%max_players%'
+      - '&7Server RAM: &d%memory-used-gb%GB&8/&7%memory-max-gb%GB &8| &7Online: &f%online%&8/&720'
       - ''
 tablist-name-formatting:
   enabled: true
