@@ -1,22 +1,102 @@
-# ViperAntiXray Configuration
+# ViperAntiXray Configuration - Maximum Hardcore Obfuscation Mode
 enabled = true
-usePermission = true
+usePermission = false
 
 [overworld]
 enabled = true
-usePermission = true
 engineMode = 2
-maxBlockHeight = 256
+maxBlockHeight = 320
 updateRadius = 2
-lavaObscures = false
-hiddenBlocks = ["diamond_ore", "deepslate_diamond_ore", "ancient_debris", "iron_ore", "deepslate_iron_ore", "gold_ore", "deepslate_gold_ore", "copper_ore", "deepslate_copper_ore", "coal_ore", "deepslate_coal_ore", "redstone_ore", "deepslate_redstone_ore", "lapis_ore", "deepslate_lapis_ore", "raw_copper_block", "raw_iron_block", "raw_gold_block", "#c:ores"]
-replacementBlocks = ["#viperantixray:hidden_only_ores", "stone", "deepslate", "andesite", "calcite", "diorite", "dirt", "granite", "gravel", "sand", "tuff", "mossy_cobblestone", "obsidian", "clay", "infested_stone", "amethyst_block", "budding_amethyst", "chest", "poplar_log", "poplar_planks", "poplar_wood"]
+lavaObscures = true
+hiddenBlocks = [
+    "diamond_ore",
+    "deepslate_diamond_ore",
+    "ancient_debris",
+    "gold_ore",
+    "deepslate_gold_ore",
+    "iron_ore",
+    "deepslate_iron_ore",
+    "copper_ore",
+    "deepslate_copper_ore",
+    "coal_ore",
+    "deepslate_coal_ore",
+    "redstone_ore",
+    "deepslate_redstone_ore",
+    "lapis_ore",
+    "deepslate_lapis_ore",
+    "emerald_ore",
+    "deepslate_emerald_ore",
+    "raw_copper_block",
+    "raw_iron_block",
+    "raw_gold_block",
+    "amethyst_block",
+    "budding_amethyst"
+]
+replacementBlocks = [
+    "diamond_ore",
+    "deepslate_diamond_ore",
+    "ancient_debris",
+    "gold_ore",
+    "deepslate_gold_ore",
+    "iron_ore",
+    "deepslate_iron_ore",
+    "copper_ore",
+    "deepslate_copper_ore",
+    "coal_ore",
+    "deepslate_coal_ore",
+    "redstone_ore",
+    "deepslate_redstone_ore",
+    "lapis_ore",
+    "deepslate_lapis_ore",
+    "emerald_ore",
+    "deepslate_emerald_ore",
+    "raw_iron_block",
+    "raw_gold_block",
+    "stone",
+    "deepslate",
+    "andesite",
+    "calcite",
+    "diorite",
+    "dirt",
+    "granite",
+    "gravel",
+    "tuff"
+]
 
 [the_nether]
 enabled = true
-usePermission = true
-engineMode = 1
+engineMode = 2
 maxBlockHeight = 128
 updateRadius = 2
 lavaObscures = true
-hiddenBlocks = ["ancient_debris", "nether_quartz_ore", "nether_gold_ore", "gold_block", "gilded_blackstone"]
+hiddenBlocks = [
+    "ancient_debris",
+    "nether_gold_ore",
+    "nether_quartz_ore",
+    "gold_block",
+    "gilded_blackstone",
+    "raw_gold_block",
+    "crying_obsidian"
+]
+replacementBlocks = [
+    "ancient_debris",
+    "nether_gold_ore",
+    "nether_quartz_ore",
+    "gold_block",
+    "gilded_blackstone",
+    "netherrack",
+    "basalt",
+    "blackstone",
+    "soul_sand",
+    "soul_soil"
+]
+
+[the_end]
+enabled = true
+engineMode = 1
+maxBlockHeight = 256
+updateRadius = 2
+lavaObscures = false
+hiddenBlocks = [
+    "obsidian"
+]
