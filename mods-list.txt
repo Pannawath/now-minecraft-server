@@ -17,6 +17,7 @@ plasmovoice-fabric-26.3-2.2.0-beta.2.jar
 servercore.jar
 skinsrestorer.jar
 spark-1.10.187-fabric.jar
+super-hopper-1.1.1.jar
 vanish-1.6.16+26.3.jar
 vmp-fabric-mc26.3.jar
 zconfig-1.0.0+26.x.jar
